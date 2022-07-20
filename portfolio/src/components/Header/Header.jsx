@@ -13,24 +13,6 @@ const Header = () => {
         </div>
 
         <img class="header__mobile-nav" src={hamburger} alt="mobile-menu" />
-
-        <nav class="header__main-nav">
-          <a href="#home" class="header__main-nav--link">
-            Home
-          </a>
-
-          <a href="#skills" class="header__main-nav--link">
-            Skills
-          </a>
-
-          <a href="#projects" class="header__main-nav--link">
-            Projects
-          </a>
-
-          <a href="#about-me" class="header__main-nav--link">
-            About Me
-          </a>
-        </nav>
       </header>
     </div>
   );

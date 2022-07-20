@@ -1,0 +1,67 @@
+@use "../../assets/sass/variables" as *;
+
+@use "../../assets/sass/mixins" as *;
+
+.hero {
+  @include mobile;
+
+  background-color: $hero-bg-color;
+  padding-bottom: 6.25em;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 7.6875em 2em 0.9em;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__name {
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: $secondary-color-slate;
+    }
+
+    &__heading {
+      font-weight: 600;
+      font-size: $text-h1;
+      padding: 0.5em 0 1em;
+
+      @include tablet {
+        display: block;
+        text-align: center;
+        padding-inline: 1em;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    color: $primary-color-navy;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 1.25rem;
+
+    background-color: $color-aqua;
+    border: 2px solid $primary-color-navy;
+    border-radius: 7px;
+    padding: 1em 1em;
+    box-shadow: 2px 3px $primary-color-navy;
+
+    &:hover {
+      background-color: $color-pale-aqua;
+    }
+
+    &--arrow {
+      margin-left: 0.5em;
+    }
+
+    &--container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
