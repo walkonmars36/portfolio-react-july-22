@@ -1,0 +1,126 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.btn {
+  margin-top: 3.125rem;
+  border-radius: 0.1875rem;
+  -webkit-appearance: none;
+}
+
+.menu-button {
+  position: fixed;
+  width: 2.7em;
+  height: 2.7em;
+  top: 1%;
+  right: 5%;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  z-index: 11;
+
+  &__burger {
+    fill: $color-white;
+    background-color: rgba($color-dark-purple, 0.4);
+  }
+
+  &__close-x {
+    stroke: $color-dark-purple;
+    stroke-linecap: round;
+    stroke-width: 4;
+    display: none;
+  }
+
+  @include mq {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform ease-out 250ms;
+
+  ul {
+    background-color: $color-green;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      font-family: $font-body;
+      color: $color-dark-purple;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: calc(100vh / 8) 0;
+      line-height: 0;
+      width: 100%;
+
+      @include mq {
+        font-size: 5vw;
+      }
+    }
+
+    li {
+      text-align: center;
+      border-bottom: 0.06rem solid $color-light-purple;
+    }
+
+    li:hover {
+      background: rgba($color-light-purple, 0.5);
+    }
+  }
+}
+
+.nav-is-open {
+  nav {
+    transform: translateX(0);
+  }
+
+  .menu-button__burger {
+    display: none;
+  }
+
+  .menu-button__close-x {
+    display: block;
+  }
+}
+
+.tilt {
+  vertical-align: top;
+}
+
+.modal-button {
+  position: fixed;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 2rem;
+  left: 2rem;
+
+  border: none;
+  cursor: pointer;
+  z-index: 13;
+
+  &__close-x {
+    stroke: $color-dark-purple;
+    stroke-linecap: round;
+    stroke-width: 5;
+  }
+
+  @include mq {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

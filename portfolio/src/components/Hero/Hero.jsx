@@ -3,15 +3,17 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="hero">
       <div class="hero__title">
-        <p class="hero__title__name">Hi I'm Mark</p>
+        <p class="hero__title__name">
+          Hi, <br /> I'm Mark
+        </p>
         <h1 class="hero__title__heading">A software developer based in Bristol.</h1>
       </div>
-      <div class="hero__button--container">
+      <div class="hero__button-container">
         <button class="hero__button">
           Take a look at my work
-          <img class="hero__button--arrow" src="./assets/down-arrow.png" alt="down arrow" />
+          <img class="hero__button-arrow" src="./assets/down-arrow.png" alt="down arrow" />
         </button>
       </div>
     </div>

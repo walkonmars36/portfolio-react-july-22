@@ -1,10 +1,5 @@
 @use "./variables" as *;
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@use "./mixins" as *;
 
 body {
   font-family: $font-body;
@@ -12,13 +7,9 @@ body {
   font-size: 1rem;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1 {
   font-family: $font-body;
-  color: $color-green;
+
   font-size: 2.25rem;
 
   @include mq {
@@ -62,8 +53,6 @@ h4 {
 }
 
 p {
-  margin: 1rem 0;
-
   @include mq {
     font-size: 1.125rem;
   }
