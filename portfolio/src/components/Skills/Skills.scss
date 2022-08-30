@@ -3,8 +3,6 @@
 @use "../../assets/sass/variables" as *;
 
 .technical-skills {
-  @include mobile;
-
   &__logos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,16 +10,15 @@
     row-gap: 4.6875em;
     margin-top: 5.5em;
 
-    @include tablet {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 5em;
-    }
+    // @include tablet {
+    //   display: flex;
+    //   justify-content: center;
+    //   flex-wrap: wrap;
+    //   gap: 5em;
+    // }
   }
 
-  &__header {
-    @include center-heading;
-    font-size: $text-h2;
-  }
+  // &__header {
+  //   @include center-heading;
+  // }
 }

@@ -2,33 +2,44 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variables" as *;
 
-.footer {
-  @include mobile;
+footer {
+  background-color: $color-dark-purple;
+  padding: 4rem 0 0.5rem 0;
+  text-align: center;
 
-  background-color: $primary-color-navy;
-  width: 100%;
-
-  padding: 4em 0;
-  margin-top: 6.25rem;
-
-  @include tablet {
-    margin-top: 10rem;
+  p {
+    color: $color-grey-light;
+    font-size: 0.625rem;
   }
+}
 
-  &__logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625em;
+.fa-github,
+.fa-linkedin {
+  color: $color-grey-light;
+
+  &:hover {
+    color: $color-green;
   }
+}
 
-  &__email {
-    color: $color-white;
-    font-family: $primary-font;
-    font-weight: 400;
-    font-size: $text-email;
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0 0.5rem;
+.footer__social-icons {
+  @include container;
+  max-width: 6rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include mq {
+    max-width: 7rem;
+  }
+}
+
+.copyright {
+  &::before {
+    content: "";
+    display: block;
+    height: 0.0625rem;
+    background-color: rgba($color-light-purple, 0.75);
+    margin: 4rem auto;
+    width: 50%;
   }
 }

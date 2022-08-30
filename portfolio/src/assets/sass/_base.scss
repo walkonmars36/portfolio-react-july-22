@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-body;
+  color: $color-grey-dark;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $font-body;
+  color: $color-green;
+  font-size: 2.25rem;
+
+  @include mq {
+    font-size: 5vw;
+  }
+
+  span {
+    font-size: 1.5rem;
+    color: $color-green;
+
+    @include mq {
+      font-size: 3vw;
+    }
+  }
+}
+
+h2 {
+  font-family: $font-body;
+  color: $color-green;
+  font-size: 2.25rem;
+
+  @include mq {
+    font-size: 5vw;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+
+  @include mq {
+    font-size: 4.5vw;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+
+  @include mq {
+    font-size: 3vw;
+  }
+}
+
+p {
+  margin: 1rem 0;
+
+  @include mq {
+    font-size: 1.125rem;
+  }
+}

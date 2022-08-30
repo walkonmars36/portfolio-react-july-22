@@ -2,66 +2,51 @@
 
 @use "../../assets/sass/mixins" as *;
 
-.hero {
-  @include mobile;
+.header {
+  background-color: $color-dark-purple;
 
-  background-color: $hero-bg-color;
-  padding-bottom: 6.25em;
-  display: flex;
-  flex-direction: column;
+  &__content {
+    @include header-container;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
 
-  &__title {
-    padding: 7.6875em 2em 0.9em;
+  &__subtitle {
+    font-family: $font-body;
+    color: $color-grey-light;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 
-    @include tablet {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__name {
-      font-weight: 500;
-      font-size: 1.25rem;
-      color: $secondary-color-slate;
-    }
-
-    &__heading {
-      font-weight: 600;
-      font-size: $text-h1;
-      padding: 0.5em 0 1em;
-
-      @include tablet {
-        display: block;
-        text-align: center;
-        padding-inline: 1em;
-      }
+    @include mq {
+      font-size: 3vw;
     }
   }
 
-  &__button {
-    display: flex;
-    color: $primary-color-navy;
-    font-family: $primary-font;
-    font-weight: 700;
-    font-size: 1.25rem;
+  &__btn {
+    border: 0.0625rem solid $color-green;
+  }
 
-    background-color: $color-aqua;
-    border: 2px solid $primary-color-navy;
-    border-radius: 7px;
-    padding: 1em 1em;
-    box-shadow: 2px 3px $primary-color-navy;
+  & a {
+    color: $color-green;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.8125em 2em;
 
     &:hover {
-      background-color: $color-pale-aqua;
+      background-color: $color-green;
+      color: $color-dark-purple;
     }
 
-    &--arrow {
-      margin-left: 0.5em;
-    }
-
-    &--container {
-      display: flex;
-      justify-content: center;
+    @include mq {
+      font-size: 2.5vw;
     }
   }
 }
