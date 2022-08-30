@@ -1,26 +1,6 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-.btn {
-  margin-top: 3.125rem;
-  border-radius: 0.1875rem;
-  border: 0.0625rem solid $color-green;
-  color: $color-green;
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.875rem;
-  padding: 0.8125em 2em;
-
-  &:hover {
-    background-color: $color-green;
-    color: $color-dark-purple;
-  }
-
-  @include mq {
-    font-size: 2.5vw;
-  }
-}
-
 .menu-button {
   position: fixed;
   width: 2.7em;

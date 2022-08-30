@@ -1,20 +1,22 @@
 import React from "react";
+import BackgroundTilt from "../BackgroundTilt/BackgroundTilt";
+import HeroBtn from "../HeroBtn/HeroBtn";
 import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div class="hero__title">
-        <p class="hero__title-name">
-          <span>Hi,</span> <br /> I'm Mark
-        </p>
-        <h1 class="hero__title-heading">A software developer based in Bristol.</h1>
+    <>
+      <div className="hero">
+        <div className="hero__title">
+          <p className="hero__title-name">
+            <span>Hi,</span> <br /> I'm Mark
+          </p>
+          <h1 className="hero__title-heading">A software developer based in Bristol.</h1>
+        </div>
+        <HeroBtn />
       </div>
-      <div class="hero__button-container">
-        <button class="btn ">Take a look at my work</button>
-        {/* <img class="hero__button-arrow" src="./assets/down-arrow.png" alt="down arrow" /> */}
-      </div>
-    </div>
+      <BackgroundTilt />
+    </>
   );
 };
 

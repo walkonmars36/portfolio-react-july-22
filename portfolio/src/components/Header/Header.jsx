@@ -7,14 +7,14 @@ import ClosingBracket from "../ClosingBracket/ClosingBracket";
 const Header = () => {
   return (
     <div>
-      <header class="header">
-        <div class="header__title">
+      <header className="header">
+        <div className="header__title">
           <OpenBracket />
-          <h5 class="header__title-name">MarkLawson</h5>
+          <h5 className="header__title-name">MarkLawson</h5>
           <ClosingBracket />
         </div>
 
-        <span class="header__mobile-nav" alt="mobile-menu">
+        <span className="header__mobile-nav" alt="mobile-menu">
           <FontAwesomeIcon icon="bars" />
         </span>
       </header>
