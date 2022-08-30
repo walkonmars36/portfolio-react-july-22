@@ -1,4 +1,6 @@
 import "./App.scss";
+import "./components/FontAwesomeIcons/FontAwesomeIcons";
+
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Skills from "./components/Skills/Skills";
@@ -11,10 +13,10 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Skills />
+      {/* <Skills />
       <Projects />
       <AboutMe />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

@@ -3,7 +3,7 @@
 @use "../../assets/sass/mixins" as *;
 
 .header {
-  background-color: $color-dark-purple;
+  // background-color: $color-dark-purple;
 
   &__content {
     @include header-container;

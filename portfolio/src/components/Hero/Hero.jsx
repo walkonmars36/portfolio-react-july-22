@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div>
       <div class="hero__title">
-        <p class="hero__title__name">Hey! I'm Mark</p>
+        <p class="hero__title__name">Hi I'm Mark</p>
         <h1 class="hero__title__heading">A software developer based in Bristol.</h1>
       </div>
       <div class="hero__button--container">
