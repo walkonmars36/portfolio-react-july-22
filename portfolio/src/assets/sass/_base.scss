@@ -8,26 +8,12 @@ body {
 }
 
 h1 {
-  font-family: $font-body;
-
-  font-size: 2.25rem;
-
   @include mq {
-    font-size: 5vw;
-  }
-
-  span {
-    font-size: 1.5rem;
-    color: $color-green;
-
-    @include mq {
-      font-size: 3vw;
-    }
+    font-size: 3vw;
   }
 }
 
 h2 {
-  font-family: $font-body;
   color: $color-green;
   font-size: 2.25rem;
 
@@ -49,6 +35,14 @@ h4 {
 
   @include mq {
     font-size: 3vw;
+  }
+}
+
+h5 {
+  font-size: 1rem;
+
+  @include mq {
+    font-size: 2.3vw;
   }
 }
 

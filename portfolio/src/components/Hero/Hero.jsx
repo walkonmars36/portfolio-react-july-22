@@ -5,16 +5,14 @@ const Hero = () => {
   return (
     <div className="hero">
       <div class="hero__title">
-        <p class="hero__title__name">
-          Hi, <br /> I'm Mark
+        <p class="hero__title-name">
+          <span>Hi,</span> <br /> I'm Mark
         </p>
-        <h1 class="hero__title__heading">A software developer based in Bristol.</h1>
+        <h1 class="hero__title-heading">A software developer based in Bristol.</h1>
       </div>
       <div class="hero__button-container">
-        <button class="hero__button">
-          Take a look at my work
-          <img class="hero__button-arrow" src="./assets/down-arrow.png" alt="down arrow" />
-        </button>
+        <button class="btn ">Take a look at my work</button>
+        {/* <img class="hero__button-arrow" src="./assets/down-arrow.png" alt="down arrow" /> */}
       </div>
     </div>
   );

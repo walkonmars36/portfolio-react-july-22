@@ -10,7 +10,7 @@ const Header = () => {
       <header class="header">
         <div class="header__title">
           <OpenBracket />
-          <h3 class="header__title-name">MarkLawson</h3>
+          <h5 class="header__title-name">MarkLawson</h5>
           <ClosingBracket />
         </div>
 
