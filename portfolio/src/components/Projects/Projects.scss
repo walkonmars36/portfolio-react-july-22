@@ -3,9 +3,7 @@
 @use "../../assets/sass/variables" as *;
 
 .portfolio {
-  background-color: $color-grey-light;
-
-  &__container {
+  &__content {
     @include container;
   }
 }

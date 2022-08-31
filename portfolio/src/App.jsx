@@ -14,10 +14,9 @@ function App() {
       <Header />
       <Hero />
       <AboutMe />
-      {/* <Skills /> */}
-      {/* <Projects />
-      
-      <Footer />  */}
+      <Projects />
+
+      {/* <Footer />  */}
     </div>
   );
 }

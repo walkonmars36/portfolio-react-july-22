@@ -1,147 +1,129 @@
 import React from "react";
 import "./Projects.scss";
+import featured from "../../assets/images/project-featured.png";
+import a from "../../assets/images/projectA.png";
+import b from "../../assets/images/projectB.png";
+import c from "../../assets/images/projectC.png";
+import d from "../../assets/images/projectD.png";
 
 const Projects = () => {
   return (
-    <section class="projects">
-      <h2 class="projects__heading">
-        <span class="undershadow">My Projects</span>
-      </h2>
+    <div class="portfolio" id="projects">
+      <div class="portfolio__content">
+        <h2 class="projects__heading">My Projects</h2>
 
-      <div class="projects__container">
-        <div class="projects__card--1">
-          <div class="projects__client-project">
-            <div class="projects__client-project--image">
-              <img src="./assets/laptop-dog.png" alt="laptop-dog" />
-            </div>
-          </div>
+        <div class="projects">
+          {/* Project item 1 - FEATURED */}
+          <figure class="projects__item featured">
+            <img src={featured} alt="featured portfolio item" />
+            <figcaption>
+              <h3 class="projects__title"> Memory-Game AKA Matching-Pairs </h3>
+              <p class="projects__desc">A simple game made with HTML SCSS and Javascript.</p>
+              <a href="#" class="projects__link">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </figcaption>
 
-          <div class="projects__details">
-            <h4 class="projects__details--sub-heading">REACT</h4>
-            <h2 class="projects__heading--bigger">Client Project</h2>
-            <p class="projects__description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+            {/* Project modal 1 - FEATURED  */}
+            <div class="projects-modal">
+              <button class="modal-button">
+                <svg class="modal-button__close-x" viewbox="0 0 40 40">
+                  <path d="M 10,10 L 30,30 M 30,10 L 10,30" />
+                </svg>
+              </button>
 
-            <div class="projects__code">
-              <div class="projects__code--block">
-                <p class="projects__code--text">Code</p>
-                <img src="./assets/carbon_code.png" alt="markup-brackets" />
+              <div class="projects-modal__header">
+                <div class="projects-modal__title-box">
+                  <h3 class="projects-modal__title">Memory-Game AKA Matching-Pairs</h3>
+                  <p class="projects-modal__subtitle">A simple game made with HTML SCSS and Javascript.</p>
+                </div>
+              </div>
+              {/* close modal header */}
+              <div class="projects-modal__content">
+                <p>For my first project using Javascript, I made a matching pairs game. The object is to find 6 pairs of dogs.</p>
 
-                <p class="projects__code--text">Preview</p>
-                <img src="./assets/eye.png" alt="eyeball image" />
+                <p>
+                  You can play the game{" "}
+                  <a href="https://walkonmars36.github.io/memory-game-matching-pairs/" class="projects-modal__link" target="_blank">
+                    here
+                  </a>
+                  .{" "}
+                </p>
+
+                <div class="projects-modal__full-width">
+                  <img src="./images/modal-pug.jpg" />{" "}
+                </div>
+
+                <h4>Screenshots from the game</h4>
+
+                <div class="projects-modal__images">
+                  <div class="projects-modal__img">
+                    <img src="./images/modal-image-1.jpg" alt="featured project image" />
+                  </div>
+
+                  <div class="projects-modal__img">
+                    <img src="./images/pairs-2.png" alt="featured project image" />
+                  </div>
+
+                  <div class="projects-modal__img">
+                    <img src="./images/pairs-3.png" alt="featured project image" />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            {/* <!--close modal--> */}
+          </figure>
 
-        <div class="projects__card--2">
-          <div class="projects__rest-api">
-            <div class="projects__placeholder-image"></div>
-          </div>
+          {/* <!--Project item 2 --> */}
+          <figure class="projects__item">
+            <img src={a} alt=" portfolio item" />
+            <figcaption>
+              <h3 class="projects__title"> Project A </h3>
+              <p class="projects__desc">Short description goes here.</p>
+              <a href="#" class="projects__link">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </figcaption>
+          </figure>
 
-          <div class="projects__details">
-            <h4 class="projects__details--sub-heading">JAVA, SPRING BOOT</h4>
-            <h2 class="projects__heading--bigger">REST API</h2>
-            <p class="projects__description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
+          {/* <!--Project item 3  --> */}
+          <figure class="projects__item">
+            <img src={b} alt=" portfolio item" />
+            <figcaption>
+              <h3 class="projects__title"> Project B </h3>
+              <p class="projects__desc">Short description goes here.</p>
+              <a href="#" class="projects__link">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </figcaption>
+          </figure>
 
-            <div class="projects__code">
-              <div class="projects__code--block">
-                <p class="projects__code--text">Code </p>
-                <img src="./assets/carbon_code.png" alt="markup-brackets" />
+          {/* <!--Project item 4--> */}
+          <figure class="projects__item">
+            <img src={c} alt=" portfolio item" />
+            <figcaption>
+              <h3 class="projects__title"> Project C </h3>
+              <p class="projects__desc">Short description goes here.</p>
+              <a href="#" class="projects__link">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </figcaption>
+          </figure>
 
-                <p class="projects__code--text">Preview </p>
-                <img src="./assets/eye.png" alt="eyeball image" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects__card--3">
-          <div class="projects__punk-api">
-            <div class="projects__placeholder-image"></div>
-          </div>
-
-          <div class="projects__details">
-            <h4 class="projects__sub-heading">REACT</h4>
-            <h2 class="projects__heading--bigger">PUNK API</h2>
-            <p class="projects__description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-
-            <div class="projects__code">
-              <div class="projects__code--block">
-                <p class="projects__code--text">Code </p>
-                <img src="./assets/carbon_code.png" alt="markup-brackets" /> <p class="projects__code--text">Preview </p>
-                <img src="./assets/eye.png" alt="eyeball image" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects__tablet-and-larger projects__card--4">
-          <div class="projects__client-project">
-            <div class="projects__client-project--image">
-              <img src="./assets/laptop-dog.png" alt="laptop-dog" />
-            </div>
-          </div>
-
-          <div class="projects__details">
-            <h4 class="projects__details--sub-heading">REACT</h4>
-            <h2 class="projects__heading--bigger">Client Project</h2>
-            <p class="projects__description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-
-            <div class="projects__code">
-              <div class="projects__code--block">
-                <p class="projects__code--text">Code</p>
-                <img src="./assets/carbon_code.png" alt="markup-brackets" />
-
-                <p class="projects__code--text">Preview</p>
-                <img src="./assets/eye.png" alt="eyeball image" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects__tablet-and-larger projects__card--5">
-          <div class="projects__rest-api">
-            <div class="projects__placeholder-image"></div>
-          </div>
-
-          <div class="projects__details">
-            <h4 class="projects__details--sub-heading">JAVA, SPRING BOOT</h4>
-            <h2 class="projects__heading--bigger">REST API</h2>
-            <p class="projects__description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-
-            <div class="projects__code">
-              <div class="projects__code--block">
-                <p class="projects__code--text">Code </p>
-                <img src="./assets/carbon_code.png" alt="markup-brackets" />
-
-                <p class="projects__code--text">Preview </p>
-                <img src="./assets/eye.png" alt="eyeball image" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="projects__tablet-and-larger projects__card--6">
-          <div class="projects__punk-api">
-            <div class="projects__placeholder-image"></div>
-          </div>
-
-          <div class="projects__details">
-            <h4 class="projects__sub-heading">REACT</h4>
-            <h2 class="projects__heading--bigger">PUNK API</h2>
-            <p class="projects__description">Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec, augue urna gravida nisl, tortor sapien nec sollicitudin.</p>
-
-            <div class="projects__code">
-              <div class="projects__code--block">
-                <p class="projects__code--text">Code </p>
-                <img src="./assets/carbon_code.png" alt="markup-brackets" /> <p class="projects__code--text">Preview </p>
-                <img src="./assets/eye.png" alt="eyeball image" />
-              </div>
-            </div>
-          </div>
+          {/* <!--Project item 5 --> */}
+          <figure class="projects__item">
+            <img src={d} alt=" portfolio item" />
+            <figcaption>
+              <h3 class="projects__title"> Project D </h3>
+              <p class="projects__desc">Short description goes here.</p>
+              <a href="#" class="projects__link">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </figcaption>
+          </figure>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
