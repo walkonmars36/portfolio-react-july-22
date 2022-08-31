@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutMe.scss";
+import Mark from "../../assets/images/mark.jpeg";
 
 const AboutMe = () => {
   return (
@@ -8,9 +9,9 @@ const AboutMe = () => {
       <div class="about-me__container">
         <div class="about-me__profile">
           <div class="about-me__imgs">
-            <div class="about-me__imgs--profile-pic"></div>
-            <img class="about-me__imgs--fingerprint" src="./assets/fingerprint.svg" alt="fingerprint image" />
-            <img class="about-me__imgs--wavy-line" src="./assets/wavy-line.png" alt="wavy line image" />
+            <div class="about-me__imgs--profile-pic">
+              <img src={Mark} alt="Headshot of Mark Lawson" />
+            </div>
           </div>
         </div>
 

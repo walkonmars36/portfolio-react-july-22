@@ -3,6 +3,7 @@
 @use "../../assets/sass/variables" as *;
 
 .technical-skills {
+  @include container;
   &__logos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
