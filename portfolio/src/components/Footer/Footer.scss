@@ -3,9 +3,11 @@
 @use "../../assets/sass/variables" as *;
 
 footer {
+  @include container;
   background-color: $color-dark-purple;
   padding: 4rem 0 0.5rem 0;
   text-align: center;
+  border: 1px solid grey;
 
   p {
     color: $color-grey-light;
@@ -23,7 +25,7 @@ footer {
 }
 
 .footer__social-icons {
-  @include container;
+  // @include container;
   max-width: 6rem;
   display: flex;
   justify-content: space-between;

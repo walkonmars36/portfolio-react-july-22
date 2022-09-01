@@ -3,6 +3,8 @@
 @use "../../assets/sass/variables" as *;
 
 .technical-skills {
+  clear: left;
+
   &__heading {
     margin-top: 1.5rem;
     font-size: 1.8rem;

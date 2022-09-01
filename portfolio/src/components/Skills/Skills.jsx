@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithubAlt, faHtml5, faCss3Alt, faJsSquare, faSass, faReact, faJava, fa} from "@fortawesome/free-brands-svg-icons";
+import {faGithubAlt, faHtml5, faCss3Alt, faJsSquare, faSass, faReact, faJava} from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
   return (
