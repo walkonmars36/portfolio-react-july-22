@@ -4,7 +4,7 @@ import "./ContactForm.scss";
 
 const ContactForm = () => {
   return (
-    <section className="contact" id="contact">
+    <div className="contact">
       <h2 className="contact__heading">Get in touch</h2>
       <form action="mailto:mark@walkonmars.co.uk" method="get" enctype="text/plain">
         <label className="contact__name">
@@ -24,7 +24,7 @@ const ContactForm = () => {
 
         <input className="btn contact__btn" type="submit" value="send" />
       </form>
-    </section>
+    </div>
   );
 };
 

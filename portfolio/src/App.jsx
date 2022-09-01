@@ -14,7 +14,6 @@ function App() {
       <Hero />
       <AboutMe />
       <Projects />
-
       <Footer />
     </div>
   );

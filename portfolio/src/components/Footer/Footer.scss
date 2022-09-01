@@ -2,22 +2,34 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variables" as *;
 
-footer {
+.footer {
   @include container;
   background-color: $color-dark-purple;
-  padding: 4rem 0 0.5rem 0;
-  text-align: center;
-  border: 1px solid grey;
+  padding-bottom: 5em;
 
   p {
     color: $color-grey-light;
     font-size: 0.625rem;
+  }
+
+  &__email {
+    text-align: center;
+    margin-top: 1rem;
+
+    &-address {
+      color: $color-grey-light;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
   }
 }
 
 .fa-github,
 .fa-linkedin {
   color: $color-grey-light;
+  cursor: pointer;
 
   &:hover {
     color: $color-green;
@@ -26,9 +38,11 @@ footer {
 
 .footer__social-icons {
   // @include container;
-  max-width: 6rem;
+  max-width: 7rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto 0;
 
   @include mq {
     max-width: 7rem;
