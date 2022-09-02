@@ -3,6 +3,9 @@
 @use "../../assets/sass/variables" as *;
 
 .portfolio {
+  margin-top: 3rem;
+  padding-bottom: 3em;
+
   &__content {
     @include container;
   }

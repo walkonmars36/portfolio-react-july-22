@@ -2,10 +2,15 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variables" as *;
 
-.footer {
+.footer-content {
   @include container;
   background-color: $color-dark-purple;
   padding-bottom: 5em;
+
+  @include mq {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
   p {
     color: $color-grey-light;
@@ -24,6 +29,19 @@
       }
     }
   }
+
+  &__social-icons {
+    // @include container;
+    max-width: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto 0;
+
+    @include mq {
+      max-width: 7rem;
+    }
+  }
 }
 
 .fa-github,
@@ -36,26 +54,13 @@
   }
 }
 
-.footer__social-icons {
-  // @include container;
-  max-width: 7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3rem auto 0;
-
-  @include mq {
-    max-width: 7rem;
-  }
-}
-
-.copyright {
-  &::before {
-    content: "";
-    display: block;
-    height: 0.0625rem;
-    background-color: rgba($color-light-purple, 0.75);
-    margin: 4rem auto;
-    width: 50%;
-  }
-}
+// .copyright {
+//   &::before {
+//     content: "";
+//     display: block;
+//     height: 0.0625rem;
+//     background-color: rgba($color-light-purple, 0.75);
+//     margin: 4rem auto;
+//     width: 50%;
+//   }
+// }

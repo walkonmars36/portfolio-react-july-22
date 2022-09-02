@@ -6,10 +6,11 @@ import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer-content">
       <ContactForm />
-      <div>
-        <div className="footer__social-icons">
+
+      <div className="footer-content__links">
+        <div className="footer-content__social-icons">
           <span>
             <FontAwesomeIcon icon={faGithub} size="3x" />
           </span>
@@ -17,8 +18,8 @@ const Footer = () => {
             <FontAwesomeIcon icon={faLinkedin} size="3x" />
           </span>
         </div>
-        <div className="footer__email">
-          <a href="mailto:walkonmars@gmail.com" className="footer__email-address">
+        <div className="footer-content__email">
+          <a href="mailto:walkonmars@gmail.com" className="footer-content__email-address">
             walkonmars@gmail.com
           </a>
         </div>
