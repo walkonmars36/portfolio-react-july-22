@@ -1,0 +1,124 @@
+@use "../../assets/sass/variables" as *;
+@use "../../assets/sass/mixins" as *;
+
+// .menu-button {
+//   background-color: transparent;
+//   border: none;
+
+//   cursor: pointer;
+
+//   &__close-x {
+//     stroke: $color-dark-purple;
+//     stroke-linecap: round;
+//     stroke-width: 4;
+//     display: none;
+//   }
+
+//   @include mq {
+//     width: 3em;
+//     height: 3em;
+//   }
+// }
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  z-index: 200;
+
+  ul {
+    background-color: $color-green;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      font-family: $font-body;
+      color: $color-dark-purple;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: calc(100vh / 8) 0;
+      line-height: 0;
+      width: 100%;
+
+      @include mq {
+        font-size: 5vw;
+      }
+    }
+
+    li {
+      text-align: center;
+      border-bottom: 0.06rem solid $color-light-purple;
+    }
+
+    li:hover {
+      background: rgba($color-light-purple, 0.5);
+    }
+  }
+}
+
+.openNav-enter {
+  transform: translateX(+100%);
+  opacity: 0;
+}
+
+.openNav-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 350ms;
+}
+
+.openNav-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.openNav-exit-active {
+  transform: translateX(+100%);
+  opacity: 0;
+  transition: all 350ms;
+}
+
+// .tilt {
+//   vertical-align: top;
+// }
+
+// .modal-button {
+//   position: fixed;
+//   width: 1.5rem;
+//   height: 1.5rem;
+//   top: 2rem;
+//   left: 2rem;
+
+//   border: none;
+//   cursor: pointer;
+//   z-index: 13;
+
+//   &__close-x {
+//     stroke: $color-dark-purple;
+//     stroke-linecap: round;
+//     stroke-width: 5;
+//   }
+
+//   @include mq {
+//     width: 2.5rem;
+//     height: 2.5rem;
+//   }
+// }
+
+.closing-x {
+  color: $color-dark-purple;
+  position: fixed;
+  width: 5%;
+  height: 5%;
+  top: 2%;
+  right: 6%;
+}

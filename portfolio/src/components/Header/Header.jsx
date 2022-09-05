@@ -5,17 +5,17 @@ import OpenBracket from "../OpenBracket/OpenBracket";
 import ClosingBracket from "../ClosingBracket/ClosingBracket";
 import {useState, useEffect} from "react";
 
-const Header = () => {
-  const [show, setShow] = useState(true);
+const Header = ({handleToggleNav}) => {
+  const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY) {
-        setShow(false);
+        setShowHeader(false);
       } else {
-        setShow(true);
+        setShowHeader(true);
       }
       setLastScrollY(currentScrollY);
     };
@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <div>
-      {show && (
+      {showHeader && (
         <header className="header">
           <div className="header__title">
             <OpenBracket />
@@ -34,8 +34,8 @@ const Header = () => {
             <ClosingBracket />
           </div>
 
-          <span className="header__mobile-nav" alt="mobile-menu">
-            <FontAwesomeIcon icon="bars" />
+          <span className="header__menu-btn" alt="mobile-menu">
+            <FontAwesomeIcon icon="bars" onClick={handleToggleNav} />
           </span>
         </header>
       )}
