@@ -1,11 +1,12 @@
 import React from "react";
 import "./Header.scss";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 import OpenBracket from "../OpenBracket/OpenBracket";
 import ClosingBracket from "../ClosingBracket/ClosingBracket";
 import {useState, useEffect} from "react";
+import Hamburger from "hamburger-react";
 
-const Header = ({handleToggleNav}) => {
+const Header = ({handleToggleNav, navOpen, setNavOpen}) => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -34,8 +35,8 @@ const Header = ({handleToggleNav}) => {
             <ClosingBracket />
           </div>
 
-          <span className="header__menu-btn" alt="mobile-menu">
-            <FontAwesomeIcon icon="bars" onClick={handleToggleNav} />
+          <span className="header__menu" alt="mobile-menu">
+            <Hamburger toggled={navOpen} toggle={setNavOpen} onToggle={handleToggleNav} />
           </span>
         </header>
       )}

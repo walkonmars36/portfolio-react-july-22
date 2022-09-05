@@ -24,8 +24,12 @@
     }
   }
 
-  &__menu-btn {
+  &__menu {
     background-color: $color-black;
     padding: 0.3em 0.5em;
   }
+}
+
+.show {
+  display: block;
 }

@@ -1,13 +1,9 @@
 import React from "react";
 import "./Nav.scss";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faX} from "@fortawesome/free-solid-svg-icons";
-import {CSSTransition} from "react-transition-group";
 
-const Nav = ({handleToggleNav}) => {
+const Nav = () => {
   return (
     <nav>
-      <FontAwesomeIcon icon={faX} className="closing-x" onClick={handleToggleNav} />
       <ul>
         <li>
           <a href="#home">home</a>

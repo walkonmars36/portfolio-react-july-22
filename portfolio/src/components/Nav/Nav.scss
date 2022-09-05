@@ -24,8 +24,8 @@ nav {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 20%;
-  right: 0;
+  left: 0;
+  right: 20%;
   z-index: 200;
 
   ul {
@@ -65,31 +65,27 @@ nav {
   }
 }
 
-.openNav-enter {
-  transform: translateX(+100%);
+.open-nav-enter {
+  transform: translateX(-100%);
   opacity: 0;
 }
 
-.openNav-enter-active {
+.open-nav-enter-active {
   transform: translateX(0);
   opacity: 1;
-  transition: all 350ms;
+  transition: all 500ms;
 }
 
-.openNav-exit {
+.open-nav-exit {
   transform: translateX(0);
   opacity: 1;
 }
 
-.openNav-exit-active {
-  transform: translateX(+100%);
+.open-nav-exit-active {
+  transform: translateX(-100%);
   opacity: 0;
-  transition: all 350ms;
+  transition: all 500ms;
 }
-
-// .tilt {
-//   vertical-align: top;
-// }
 
 // .modal-button {
 //   position: fixed;
@@ -113,12 +109,3 @@ nav {
 //     height: 2.5rem;
 //   }
 // }
-
-.closing-x {
-  color: $color-dark-purple;
-  position: fixed;
-  width: 5%;
-  height: 5%;
-  top: 2%;
-  right: 6%;
-}
