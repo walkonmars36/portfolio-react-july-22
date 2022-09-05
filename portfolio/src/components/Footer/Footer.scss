@@ -8,8 +8,24 @@
   padding-bottom: 5em;
 
   @include mq {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    // display: grid;
+    // grid-template-columns: repeat(6, 1fr);
+
+    // &__contact-form {
+    //   grid-column: 1 / span 3;
+    // }
+
+    &__contact-form {
+      width: 60%;
+    }
+
+    &__links {
+      align-self: end;
+      margin-right: 2rem;
+    }
+
+    display: flex;
+    justify-content: space-between;
   }
 
   p {

@@ -7,7 +7,9 @@ import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <div className="footer-content">
-      <ContactForm />
+      <div className="footer-content__contact-form">
+        <ContactForm />
+      </div>
 
       <div className="footer-content__links">
         <div className="footer-content__social-icons">

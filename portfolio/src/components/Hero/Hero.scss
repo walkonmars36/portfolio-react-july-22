@@ -5,6 +5,7 @@
 .hero {
   background-color: $color-dark-purple;
   @include container;
+  padding-top: 3em;
   padding-bottom: 3em;
 
   &__title {
