@@ -8,14 +8,23 @@ import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Footer from "./components/Footer/Footer";
 import {CSSTransition} from "react-transition-group";
-import {Sling as Hamburger} from "hamburger-react";
+import Hamburger from "hamburger-react";
+import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
+import {Element} from "react-scroll";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
+  navOpen ? disableBodyScroll(document) : enableBodyScroll(document);
+
   const handleToggleNav = () => {
     setShowNav(!showNav);
+  };
+
+  const handleNavOpen = () => {
+    setNavOpen(false);
+    setShowNav(false);
   };
 
   return (
@@ -23,13 +32,24 @@ function App() {
       <Header handleToggleNav={handleToggleNav} Hamburger={Hamburger} navOpen={navOpen} setNavOpen={setNavOpen} />
 
       <CSSTransition in={showNav} timeout={500} classNames="open-nav" unmountOnExit>
-        <Nav handleToggleNav={handleToggleNav} />
+        <Nav handleNavOpen={handleNavOpen} />
       </CSSTransition>
 
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Footer />
+      <Element name="hero">
+        <Hero />
+      </Element>
+
+      <Element name="about-me">
+        <AboutMe />
+      </Element>
+
+      <Element name="projects">
+        <Projects />
+      </Element>
+
+      <Element name="contact">
+        <Footer />
+      </Element>
     </div>
   );
 }

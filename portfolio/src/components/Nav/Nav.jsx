@@ -1,21 +1,31 @@
 import React from "react";
 import "./Nav.scss";
+import Scroll from "react-scroll";
+const Link = Scroll.Link;
 
-const Nav = () => {
+const Nav = ({handleNavOpen}) => {
   return (
     <nav>
       <ul>
         <li>
-          <a href="#home">home</a>
+          <Link to="hero" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#about">about</a>
+          <Link to="about-me" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+            About Me
+          </Link>
         </li>
         <li>
-          <a href="#projects">projects</a>
+          <Link to="projects" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+            Projects
+          </Link>
         </li>
         <li>
-          <a href="#contact">contact</a>
+          <Link to="contact" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
