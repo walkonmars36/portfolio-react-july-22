@@ -5,70 +5,52 @@ import a from "../../assets/images/projectA.png";
 import b from "../../assets/images/projectB.png";
 import c from "../../assets/images/projectC.png";
 import d from "../../assets/images/projectD.png";
-import LightBgTilt from "../LightBgTilt/LightBgTilt";
-import courseology from "../../assets/images/courseology.png";
 
-const Projects = () => {
+const Projects = ({id, title, shortDesc, longDesc, image, link}) => {
   return (
     <>
-      <div className="portfolio">
-        <div className="portfolio__content">
-          <h2 className="projects__heading">My Projects</h2>
+      <div className="projects">
+        {/* Project item 1 - FEATURED */}
+        {/* <figure className="projects__item featured">
+          <img src={strImage} alt="featured portfolio item" />
+          <figcaption>
+            <h3 className="projects__title">{strTitle}</h3>
+            <p className="projects__desc">{strShortDesc}</p>
+          </figcaption>
+        </figure> */}
 
-          <div className="projects">
-            {/* Project item 1 - FEATURED */}
-            <figure className="projects__item featured">
-              <img src={courseology} alt="featured portfolio item" />
-              <figcaption>
-                <h3 className="projects__title">_courseology</h3>
-                <p className="projects__desc">A full stack app</p>
-                {/* <a href="#" className="projects__link">
-                Read More <i className="fas fa-arrow-right"></i>
-              </a> */}
-              </figcaption>
+        <figure className="projects__item">
+          <img src={image} alt=" portfolio item" />
+          <figcaption>
+            <h3 className="projects__title">{title}</h3>
+            <p className="projects__desc">{shortDesc}</p>
+          </figcaption>
+        </figure>
 
-              {/* Project modal 1 - FEATURED  */}
-            </figure>
+        {/* <figure className="projects__item">
+          <img src={b} alt=" portfolio item" />
+          <figcaption>
+            <h3 className="projects__title"> Project B </h3>
+            <p className="projects__desc">Short description goes here.</p>
+          </figcaption>
+        </figure>
 
-            {/* <!--Project item 2 --> */}
-            <figure className="projects__item">
-              <img src={a} alt=" portfolio item" />
-              <figcaption>
-                <h3 className="projects__title"> Project A </h3>
-                <p className="projects__desc">Short description goes here.</p>
-              </figcaption>
-            </figure>
+        <figure className="projects__item">
+          <img src={c} alt=" portfolio item" />
+          <figcaption>
+            <h3 className="projects__title"> Project C </h3>
+            <p className="projects__desc">Short description goes here.</p>
+          </figcaption>
+        </figure>
 
-            {/* <!--Project item 3  --> */}
-            <figure className="projects__item">
-              <img src={b} alt=" portfolio item" />
-              <figcaption>
-                <h3 className="projects__title"> Project B </h3>
-                <p className="projects__desc">Short description goes here.</p>
-              </figcaption>
-            </figure>
-
-            {/* <!--Project item 4--> */}
-            <figure className="projects__item">
-              <img src={c} alt=" portfolio item" />
-              <figcaption>
-                <h3 className="projects__title"> Project C </h3>
-                <p className="projects__desc">Short description goes here.</p>
-              </figcaption>
-            </figure>
-
-            {/* <!--Project item 5 --> */}
-            <figure className="projects__item">
-              <img src={d} alt=" portfolio item" />
-              <figcaption>
-                <h3 className="projects__title"> Project D </h3>
-                <p className="projects__desc">Short description goes here.</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+        <figure className="projects__item">
+          <img src={d} alt=" portfolio item" />
+          <figcaption>
+            <h3 className="projects__title"> Project D </h3>
+            <p className="projects__desc">Short description goes here.</p>
+          </figcaption>
+        </figure> */}
       </div>
-      <LightBgTilt />
     </>
   );
 };

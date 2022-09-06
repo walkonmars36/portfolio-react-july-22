@@ -1,16 +1,18 @@
-import {useState} from "react";
+import {useState, useRef} from "react";
 import "./App.scss";
 
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
-import Projects from "./components/Projects/Projects";
+import ProjectsList from "./containers/ProjectsList/ProjectsList";
+
 import AboutMe from "./components/AboutMe/AboutMe";
 import Footer from "./components/Footer/Footer";
 import {CSSTransition} from "react-transition-group";
 import Hamburger from "hamburger-react";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 import {Element} from "react-scroll";
+import projectsArray from "./data/projectsArray";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -44,7 +46,7 @@ function App() {
       </Element>
 
       <Element name="projects">
-        <Projects />
+        <ProjectsList projectsArray={projectsArray} />
       </Element>
 
       <Element name="contact">

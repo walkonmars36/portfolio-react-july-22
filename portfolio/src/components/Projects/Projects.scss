@@ -2,19 +2,12 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variables" as *;
 
-.portfolio {
-  margin-top: 3rem;
-  padding-bottom: 3em;
-
-  &__content {
-    @include container;
-  }
-}
-
 .projects {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
+  padding-bottom: 3em;
 
   @include mq {
     grid-template-columns: repeat(4, 1fr);

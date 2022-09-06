@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div className="contact">
       <h2 className="contact__heading">Get in touch</h2>
-      <form action="mailto:mark@walkonmars.co.uk" method="get" enctype="text/plain">
+      <form action="mailto:mark@walkonmars.co.uk" method="get" encType="text/plain">
         <label className="contact__name">
           Name:
           <input type="text" id="name" />

@@ -5,10 +5,10 @@ import {faGithubAlt, faHtml5, faCss3Alt, faJsSquare, faSass, faReact, faJava} fr
 
 const Skills = () => {
   return (
-    <div class="technical-skills">
-      <h2 class="technical-skills__heading">Technical Skills</h2>
+    <div className="technical-skills">
+      <h2 className="technical-skills__heading">Technical Skills</h2>
       <p>Below are the technologies I have used so far, I expect to add to these as I am always keen to learn new methods and blah blah blah! </p>
-      <div class="technical-skills__logos">
+      <div className="technical-skills__logos">
         <div className="technical-skills__icon">
           <p>Git/Github</p>
           <FontAwesomeIcon icon={faGithubAlt} size="3x" />
