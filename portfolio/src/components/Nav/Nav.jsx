@@ -8,22 +8,22 @@ const Nav = ({handleNavOpen}) => {
     <nav>
       <ul>
         <li>
-          <Link to="hero" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+          <Link to="hero" smooth={true} duration={500} onClick={handleNavOpen}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about-me" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+          <Link to="about-me" smooth={true} duration={500} onClick={handleNavOpen}>
             About Me
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+          <Link to="projects" smooth={true} duration={500} onClick={handleNavOpen}>
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500} className="link" onClick={handleNavOpen}>
+          <Link to="contact" smooth={true} duration={500} onClick={handleNavOpen}>
             Contact
           </Link>
         </li>

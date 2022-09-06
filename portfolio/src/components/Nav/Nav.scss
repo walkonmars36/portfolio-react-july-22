@@ -38,9 +38,11 @@ nav {
     list-style: none;
     padding: 0;
 
-    &__link {
+    li {
+      text-align: center;
+      border-bottom: 0.06rem solid $color-light-purple;
+
       display: inline-block;
-      font-family: $font-body;
       color: $color-dark-purple;
       font-size: 2rem;
       font-weight: bold;
@@ -48,18 +50,16 @@ nav {
       padding: calc(100vh / 8) 0;
       line-height: 0;
       width: 100%;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
 
       @include mq {
         font-size: 5vw;
       }
     }
 
-    li {
-      text-align: center;
-      border-bottom: 0.06rem solid $color-light-purple;
-    }
-
     li:hover {
+      color: $color-white;
       background: rgba($color-light-purple, 0.5);
     }
   }
