@@ -20,6 +20,7 @@ const ProjectsList = ({projectsArray}) => {
                 longDesc={project.strLongDesc}
                 image={project.strImage}
                 link={project.strLink}
+                stack={project.strStack}
                 />
           )}
         </div>

@@ -5,7 +5,6 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import ProjectsList from "./containers/ProjectsList/ProjectsList";
-
 import AboutMe from "./components/AboutMe/AboutMe";
 import Footer from "./components/Footer/Footer";
 import {CSSTransition} from "react-transition-group";

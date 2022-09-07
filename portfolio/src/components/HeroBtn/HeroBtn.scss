@@ -5,8 +5,7 @@
   border-radius: 0.1875rem;
   border: 0.0625rem solid $color-green;
   color: $color-green;
-  text-decoration: none;
-  text-align: center;
+
   font-size: 0.875rem;
   padding: 0.8125em 2em;
 
@@ -14,7 +13,8 @@
     padding-bottom: 1rem;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-green;
     color: $color-dark-purple;
   }

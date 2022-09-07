@@ -31,7 +31,21 @@
     }
 
     &__desc {
-      padding-bottom: 2rem;
+      // padding-bottom: 2rem;
+    }
+
+    &__btn {
+      border: 0.0625rem solid $color-green;
+      color: $color-green;
+      font-size: 0.625rem;
+      padding: 0.3em 0;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: $color-green;
+        color: $color-dark-purple;
+      }
     }
   }
 }
