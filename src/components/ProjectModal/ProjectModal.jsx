@@ -4,7 +4,6 @@ import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
 const ProjectModal = ({closeModal, showModal, image, title, longDesc, stack, shortDesc}) => {
   showModal ? disableBodyScroll(document) : enableBodyScroll(document);
-  const overlay = "project-modal__overlay";
 
   return (
     <>

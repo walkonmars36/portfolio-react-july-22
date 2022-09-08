@@ -3,7 +3,7 @@ import "./Header.scss";
 
 import OpenBracket from "../OpenBracket/OpenBracket";
 import ClosingBracket from "../ClosingBracket/ClosingBracket";
-import {useState, useEffect, useRef} from "react";
+import {useState, useEffect} from "react";
 import Hamburger from "hamburger-react";
 import {CSSTransition} from "react-transition-group";
 
