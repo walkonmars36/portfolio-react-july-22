@@ -1,2 +1,88 @@
 @use "../../assets/sass/mixins" as *;
 @use "../../assets/sass/variables" as *;
+
+.project-modal {
+  //   display: block;
+  position: fixed;
+  top: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  border: 1px solid $color-grey-light;
+  background-color: $color-light-purple;
+  border-radius: 2px;
+  z-index: 300;
+
+  & button {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 100;
+
+    cursor: pointer;
+    border: 1px solid rgba($color-grey-light, 1);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  //   &__overlay {
+  //     position: fixed;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background: #0000003a;
+  //     transition: opacity 0.2s ease;
+  //   }
+
+  &__top-section {
+    position: relative;
+    overflow: hidden;
+    height: 30vh;
+    background-color: $color-dark-purple;
+
+    &-title {
+      position: absolute;
+      text-align: center;
+      bottom: 25%;
+      left: 0;
+      right: 0;
+      padding: 1em;
+      background-color: $color-light-purple;
+      //   z-index: 400;
+    }
+  }
+}
+
+// CSS TRANSITION PROPERTIES
+
+.open-modal-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.open-modal-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.open-modal-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.open-modal-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 500ms;
+}
