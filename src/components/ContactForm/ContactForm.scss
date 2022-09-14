@@ -6,6 +6,12 @@
     padding: 1.5rem 0 1rem 0;
   }
 
+  &__error {
+    color: rgb(237, 115, 115);
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
   &__btn {
     display: inline-block;
     width: auto;
@@ -100,4 +106,18 @@ textarea {
 
 textarea {
   height: 7rem;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:focus,
+button:disabled:active {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
 }
