@@ -5,7 +5,7 @@
 .footer-content {
   @include container;
   background-color: $color-dark-purple;
-  padding-top: 5em;
+  padding-top: 3em;
   padding-bottom: 5em;
 
   @include mq480 {
@@ -13,16 +13,23 @@
     justify-content: space-between;
   }
 
+  // change over mq480
   &__heading {
     padding: 1.5rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
   }
 
+  // change over mq480
   &__links {
-    display: inline-block;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
   }
 
   &__email {
-    text-align: center;
+    // text-align: center;
     margin-top: 1rem;
 
     &-address {
@@ -36,11 +43,11 @@
 
   &__social-icons {
     // @include container;
-    max-width: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    // max-width: 7rem;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // margin: 0 auto;
   }
 }
 
@@ -48,6 +55,8 @@
 .fa-linkedin {
   color: $color-grey-light;
   cursor: pointer;
+  font-size: 2rem;
+  padding: 0.1em;
 
   &:hover {
     color: $color-green;
