@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../ContactForm/ContactForm";
+
 import "./Footer.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
