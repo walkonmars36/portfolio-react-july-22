@@ -10,7 +10,8 @@
 
   @include mq480 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    // align-items: center;
   }
 
   // change over mq480
@@ -18,6 +19,11 @@
     padding: 1.5rem 0 1rem 0;
     display: flex;
     justify-content: center;
+
+    @include mq480 {
+      align-self: flex-end;
+      padding: 0;
+    }
   }
 
   // change over mq480
@@ -26,11 +32,20 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row-reverse;
+
+    @include mq480 {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__email {
-    // text-align: center;
     margin-top: 1rem;
+
+    @include mq480 {
+      margin-top: 0.5rem;
+      font-size: 2vw;
+    }
 
     &-address {
       color: $color-grey-light;
@@ -42,12 +57,14 @@
   }
 
   &__social-icons {
-    // @include container;
-    // max-width: 7rem;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // margin: 0 auto;
+    @include mq480 {
+      @include container;
+      max-width: 7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 }
 

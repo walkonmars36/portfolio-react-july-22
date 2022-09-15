@@ -4,6 +4,10 @@
   padding: 0 5%;
 }
 
+@mixin container2 {
+  padding: 0 10%;
+}
+
 @mixin mq480($width: 30rem) {
   @media (min-width: $width) {
     @content;
