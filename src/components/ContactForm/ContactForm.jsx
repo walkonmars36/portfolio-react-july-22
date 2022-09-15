@@ -29,12 +29,14 @@ const ContactForm = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    resetNameInput();
-    resetEmailInput();
-
-    if (!enteredNameIsValid || !enteredEmailIsValid) {
+    if (!formIsValid) {
       return;
     }
+    console.log(enteredName, enteredEmail);
+    console.log("Submitted!");
+
+    resetNameInput();
+    resetEmailInput();
   };
 
   const nameInputClasses = nameInputError ? "invalid" : "valid";
