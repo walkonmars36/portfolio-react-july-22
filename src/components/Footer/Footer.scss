@@ -5,33 +5,21 @@
 .footer-content {
   @include container;
   background-color: $color-dark-purple;
+  padding-top: 5em;
   padding-bottom: 5em;
 
-  @include mq {
-    // display: grid;
-    // grid-template-columns: repeat(6, 1fr);
-
-    // &__contact-form {
-    //   grid-column: 1 / span 3;
-    // }
-
-    &__contact-form {
-      width: 60%;
-    }
-
-    &__links {
-      align-self: end;
-      margin-right: 2rem;
-    }
-
+  @include mq480 {
     display: flex;
     justify-content: space-between;
   }
 
-  // p {
-  //   color: $color-grey-light;
-  //   font-size: 0.625rem;
-  // }
+  &__heading {
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  &__links {
+    display: inline-block;
+  }
 
   &__email {
     text-align: center;
@@ -48,15 +36,11 @@
 
   &__social-icons {
     // @include container;
-    max-width: 7rem;
+    max-width: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem auto 0;
-
-    @include mq {
-      max-width: 7rem;
-    }
+    margin: 0 auto;
   }
 }
 
@@ -69,14 +53,3 @@
     color: $color-green;
   }
 }
-
-// .copyright {
-//   &::before {
-//     content: "";
-//     display: block;
-//     height: 0.0625rem;
-//     background-color: rgba($color-light-purple, 0.75);
-//     margin: 4rem auto;
-//     width: 50%;
-//   }
-// }
