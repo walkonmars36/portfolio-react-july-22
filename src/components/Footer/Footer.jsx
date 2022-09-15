@@ -1,4 +1,5 @@
 import React from "react";
+import Obfuscate from "react-obfuscate";
 
 import "./Footer.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -19,9 +20,7 @@ const Footer = () => {
           </span>
         </div>
         <div className="footer-content__email">
-          <a href="mailto:walkonmars@gmail.com" className="footer-content__email-address">
-            walkonmars@gmail.com
-          </a>
+          <Obfuscate email="walkonmars@gmail.com" className="footer-content__email-address"></Obfuscate>
         </div>
       </div>
     </div>
