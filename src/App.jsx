@@ -1,4 +1,4 @@
-import {useState, useRef} from "react";
+import {useState} from "react";
 import "./App.scss";
 
 import Header from "./components/Header/Header";
@@ -7,7 +7,6 @@ import Hero from "./components/Hero/Hero";
 import ProjectsList from "./containers/ProjectsList/ProjectsList";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Footer from "./components/Footer/Footer";
-import {CSSTransition} from "react-transition-group";
 import Hamburger from "hamburger-react";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 import {Element} from "react-scroll";
@@ -16,7 +15,6 @@ import projectsArray from "./data/projectsArray";
 function App() {
   const [showNav, setShowNav] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
-  const nodeRef = useRef(null);
 
   navOpen ? disableBodyScroll(document) : enableBodyScroll(document);
 
@@ -33,11 +31,7 @@ function App() {
     <div className="app">
       <Header handleToggleNav={handleToggleNav} Hamburger={Hamburger} navOpen={navOpen} setNavOpen={setNavOpen} />
 
-      <CSSTransition in={showNav} timeout={500} classNames="open-nav" unmountOnExit nodeRef={nodeRef}>
-        <div ref={nodeRef}>
-          <Nav handleNavOpen={handleNavOpen} />
-        </div>
-      </CSSTransition>
+      <Nav handleNavOpen={handleNavOpen} showNav={showNav} />
 
       <Element name="hero">
         <Hero />
