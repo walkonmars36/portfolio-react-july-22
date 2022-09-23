@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useRef} from "react";
 import "./App.scss";
 
 import Header from "./components/Header/Header";
@@ -16,6 +16,7 @@ import projectsArray from "./data/projectsArray";
 function App() {
   const [showNav, setShowNav] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
+  const nodeRef = useRef(null);
 
   navOpen ? disableBodyScroll(document) : enableBodyScroll(document);
 
@@ -32,8 +33,10 @@ function App() {
     <div className="app">
       <Header handleToggleNav={handleToggleNav} Hamburger={Hamburger} navOpen={navOpen} setNavOpen={setNavOpen} />
 
-      <CSSTransition in={showNav} timeout={500} classNames="open-nav" unmountOnExit>
-        <Nav handleNavOpen={handleNavOpen} />
+      <CSSTransition in={showNav} timeout={500} classNames="open-nav" unmountOnExit nodeRef={nodeRef}>
+        <div ref={nodeRef}>
+          <Nav handleNavOpen={handleNavOpen} />
+        </div>
       </CSSTransition>
 
       <Element name="hero">

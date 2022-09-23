@@ -1,15 +1,16 @@
-import React from "react";
+import {React} from "react";
 import "./Header.scss";
 
 import OpenBracket from "../OpenBracket/OpenBracket";
 import ClosingBracket from "../ClosingBracket/ClosingBracket";
-import {useState, useEffect} from "react";
+import {useState, useEffect, useRef} from "react";
 import Hamburger from "hamburger-react";
 import {CSSTransition} from "react-transition-group";
 
 const Header = ({handleToggleNav, navOpen, setNavOpen}) => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const nodeRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +29,8 @@ const Header = ({handleToggleNav, navOpen, setNavOpen}) => {
 
   return (
     <div>
-      <CSSTransition in={showHeader} timeout={500} classNames="show-header" unmountOnExit>
-        <header className="header">
+      <CSSTransition in={showHeader} timeout={1000} classNames="show-header" unmountOnExit nodeRef={nodeRef}>
+        <header className="header" ref={nodeRef}>
           <div className="header__title">
             <OpenBracket />
             <h5 className="header__title-name">MarkLawson</h5>
