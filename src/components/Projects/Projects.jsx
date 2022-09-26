@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React, useState, useRef} from "react";
 import "./Projects.scss";
 import ProjectModal from "../ProjectModal/ProjectModal";
 import {CSSTransition} from "react-transition-group";
@@ -7,6 +7,7 @@ const Projects = ({id, title, shortDesc, longDesc, image, link, stack}) => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
+  const nodeRef = useRef(null);
 
   return (
     <>
@@ -24,18 +25,20 @@ const Projects = ({id, title, shortDesc, longDesc, image, link, stack}) => {
             </button>
             {/* )} */}
 
-            <CSSTransition in={showModal} timeout={500} classNames="open-modal" unmountOnExit>
-              <ProjectModal
-                // prettier-ignore
-                closeModal={closeModal}
-                showModal={showModal}
-                image={image}
-                title={title}
-                longDesc={longDesc}
-                link={link}
-                shortDesc={shortDesc}
-                stack={stack}
-              />
+            <CSSTransition in={showModal} timeout={500} classNames="open-modal" unmountOnExit nodeRef={nodeRef}>
+              <div ref={nodeRef}>
+                <ProjectModal
+                  // prettier-ignore
+                  closeModal={closeModal}
+                  showModal={showModal}
+                  image={image}
+                  title={title}
+                  longDesc={longDesc}
+                  link={link}
+                  shortDesc={shortDesc}
+                  stack={stack}
+                />
+              </div>
             </CSSTransition>
           </div>
         </div>
