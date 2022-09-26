@@ -11,7 +11,6 @@ const Header = ({handleToggleNav, navOpen, setNavOpen}) => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const nodeRef = useRef(null);
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
