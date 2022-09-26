@@ -3,7 +3,7 @@
 
 .project-modal {
   //   display: block;
-  position: fixed;
+  // position: fixed;
   top: 2rem;
   bottom: 2rem;
   left: 2rem;
@@ -85,12 +85,4 @@
   transform: translateX(-100%);
   opacity: 0;
   transition: all 500ms;
-}
-
-body.open-modal-enter,
-body.open-modal-enter-active,
-body.open-modal-exit,
-body.open-modal-exit-active {
-  overflow: hidden;
-  position: fixed;
 }
