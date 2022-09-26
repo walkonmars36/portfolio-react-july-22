@@ -7,7 +7,6 @@ const Projects = ({id, title, shortDesc, longDesc, image, link, stack}) => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
-  // const nodeRef = useRef(null);
 
   return (
     <>
@@ -25,8 +24,6 @@ const Projects = ({id, title, shortDesc, longDesc, image, link, stack}) => {
             </button>
             {/* )} */}
 
-            {/* <CSSTransition in={showModal} timeout={500} classNames="open-modal" unmountOnExit nodeRef={nodeRef}> */}
-            {/* <div ref={nodeRef}> */}
             <ProjectModal
               // prettier-ignore
               closeModal={closeModal}
@@ -38,8 +35,6 @@ const Projects = ({id, title, shortDesc, longDesc, image, link, stack}) => {
               shortDesc={shortDesc}
               stack={stack}
             />
-            {/* </div> */}
-            {/* </CSSTransition> */}
           </div>
         </div>
       </div>
