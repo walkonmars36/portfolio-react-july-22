@@ -1,10 +1,10 @@
 import {useRef} from "react";
 import "./ProjectModal.scss";
-import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
+// import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 import {CSSTransition} from "react-transition-group";
 
 const ProjectModal = ({closeModal, showModal, image, title, longDesc, stack, shortDesc}) => {
-  showModal ? disableBodyScroll(document) : enableBodyScroll(document);
+  // showModal ? disableBodyScroll(document) : enableBodyScroll(document);
   const nodeRef = useRef(null);
 
   return (
