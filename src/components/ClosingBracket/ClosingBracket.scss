@@ -1,4 +1,9 @@
+@use "../../assets/sass/mixins" as *;
+
 .closing-bracket {
-  width: 0.9375rem;
-  height: 0.8125rem;
+  width: 0.9rem;
+
+  @include mq {
+    width: 1.3rem;
+  }
 }
