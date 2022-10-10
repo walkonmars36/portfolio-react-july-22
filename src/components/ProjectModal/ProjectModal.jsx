@@ -10,7 +10,7 @@ const ProjectModal = ({closeModal, showModal, image, title, longDesc, stack, sho
   return (
     <>
       {/* <div className={showModal ? overlay : "hide"} onClick={closeModal} /> */}
-      {showModal && <Overlay onClick={closeModal} />}
+      {showModal && <Overlay />}
       <CSSTransition in={showModal} timeout={500} classNames="open-modal" unmountOnExit nodeRef={nodeRef}>
         <div className={showModal ? "project-modal" : "project-modal"} onClick={closeModal} ref={nodeRef}>
           <button className="close" onClick={closeModal}>
