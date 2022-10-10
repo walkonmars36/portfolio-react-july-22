@@ -31,19 +31,19 @@ const Header = ({handleToggleNav, navOpen, setNavOpen}) => {
   navOpen ? disableBodyScroll(document) : enableBodyScroll(document);
 
   return (
-    <CSSTransition in={showHeader} timeout={1000} classNames="show-header" unmountOnExit nodeRef={nodeRef}>
-      <header className="header" ref={nodeRef}>
-        <div className="header__title">
-          <OpenBracket />
-          <h5 className="header__title-name">MarkLawson</h5>
-          <ClosingBracket />
-        </div>
+    // <CSSTransition in={showHeader} timeout={1000} classNames="show-header" unmountOnExit nodeRef={nodeRef}>
+    <header className="header" ref={nodeRef}>
+      <div className="header__title">
+        <OpenBracket />
+        <h5 className="header__title-name">MarkLawson</h5>
+        <ClosingBracket />
+      </div>
 
-        <span className="header__menu" alt="menu-button">
-          <Hamburger rounded size={25} color="#f5f5f5" label="Show menu" toggled={navOpen} toggle={setNavOpen} onToggle={handleToggleNav} />
-        </span>
-      </header>
-    </CSSTransition>
+      <span className="header__menu" alt="menu-button">
+        <Hamburger rounded size={25} color="#f5f5f5" label="Show menu" toggled={navOpen} toggle={setNavOpen} onToggle={handleToggleNav} />
+      </span>
+    </header>
+    // </CSSTransition>
   );
 };
 
