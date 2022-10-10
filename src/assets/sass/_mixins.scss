@@ -20,3 +20,10 @@
     @content;
   }
 }
+
+// 1024px
+@mixin mq1024($width: 64rem) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

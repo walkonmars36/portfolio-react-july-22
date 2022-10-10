@@ -12,6 +12,10 @@
     padding-top: 7em;
   }
 
+  @include mq1024 {
+    padding-top: 10em;
+  }
+
   &__title {
     display: inline-flex;
     flex-direction: column;
