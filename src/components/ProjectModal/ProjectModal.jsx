@@ -4,7 +4,6 @@ import "./ProjectModal.scss";
 import {CSSTransition} from "react-transition-group";
 
 const ProjectModal = ({closeModal, showModal, image, title, longDesc, stack, shortDesc}) => {
-  showModal ? (document.body.style.overflow = "hidden") : (document.body.style.overflow = "auto");
   const nodeRef = useRef(null);
 
   return (

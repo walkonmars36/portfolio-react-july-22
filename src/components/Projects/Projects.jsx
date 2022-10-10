@@ -1,12 +1,16 @@
 import {React, useState} from "react";
 import "./Projects.scss";
 import ProjectModal from "../ProjectModal/ProjectModal";
-// import {CSSTransition} from "react-transition-group";
 
 const Projects = ({id, title, shortDesc, longDesc, image, link, stack}) => {
   const [showModal, setShowModal] = useState(false);
-  const openModal = () => setShowModal(true);
-  const closeModal = () => setShowModal(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <>

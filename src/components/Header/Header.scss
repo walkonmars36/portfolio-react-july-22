@@ -13,7 +13,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 
   &__title {
     display: inline-flex;
@@ -28,6 +28,10 @@
     background-color: rgba($color-black, 0.5);
     border-radius: 0.2rem;
   }
+}
+
+.hamburger-react {
+  z-index: 10;
 }
 
 .show-header-enter {
