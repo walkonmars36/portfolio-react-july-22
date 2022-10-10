@@ -6,11 +6,7 @@ import ClosingBracket from "../ClosingBracket/ClosingBracket";
 
 import Hamburger from "hamburger-react";
 
-import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
-
 const Header = ({handleToggleNav, navOpen, setNavOpen}) => {
-  navOpen ? disableBodyScroll(document) : enableBodyScroll(document);
-
   return (
     <header className="header">
       <div className="header__title">
