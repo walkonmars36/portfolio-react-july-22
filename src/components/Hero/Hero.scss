@@ -9,11 +9,11 @@
   padding-bottom: 3em;
 
   @include mq {
-    padding-top: 7em;
+    padding-top: 10em;
   }
 
   @include mq1024 {
-    padding-top: 10em;
+    padding-top: 15em;
   }
 
   &__title {
@@ -36,7 +36,7 @@
         font-size: 1.5rem;
 
         @include mq {
-          font-size: 2vw;
+          font-size: 2.2vw;
         }
       }
     }
