@@ -8,6 +8,10 @@
   padding-top: 5em;
   padding-bottom: 3em;
 
+  @include mq {
+    padding-top: 7em;
+  }
+
   &__title {
     display: inline-flex;
     flex-direction: column;
