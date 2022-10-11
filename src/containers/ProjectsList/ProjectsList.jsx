@@ -19,6 +19,7 @@ const ProjectsList = ({projectsArray}) => {
                 shortDesc={project.strShortDesc}
                 longDesc={project.strLongDesc}
                 image={project.strImage}
+                thumbnail={project.strThumbnail}
                 link={project.strLink}
                 stack={project.strStack}
                 />

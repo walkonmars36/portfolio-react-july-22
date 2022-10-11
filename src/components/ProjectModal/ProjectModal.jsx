@@ -5,7 +5,7 @@ import Overlay from "../Overlay/Overlay";
 import {CSSTransition} from "react-transition-group";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
-const ProjectModal = ({closeModal, showModal, image, title, longDesc, stack, shortDesc}) => {
+const ProjectModal = ({closeModal, showModal, image, thumbnail, title, longDesc, stack, shortDesc}) => {
   const nodeRef = useRef(null);
 
   showModal ? disableBodyScroll(document) : enableBodyScroll(document);
@@ -14,25 +14,26 @@ const ProjectModal = ({closeModal, showModal, image, title, longDesc, stack, sho
     <>
       {showModal && <Overlay />}
       <CSSTransition in={showModal} timeout={500} classNames="open-modal" unmountOnExit nodeRef={nodeRef}>
-        <div className={showModal ? "project-modal" : "project-modal"} onClick={closeModal} ref={nodeRef}>
+        <div className="project-modal" onClick={closeModal} ref={nodeRef}>
           <button className="close" onClick={closeModal}>
             &times;
           </button>
-          <div className="project-modal__top-section">
-            <h2 className="project-modal__top-section-title">{title}</h2>
-          </div>
 
           <div className="project-modal__content">
-            <h3 className="project-modal__short-desc">{shortDesc}</h3>
-
+            <h3 className="project-modal__title">{title}</h3>
+            <h5 className="project-modal__short-desc">{shortDesc}</h5>
             <p className="project-modal__long-desc">{longDesc}</p>
-            <ul>
-              <li>{stack[0]}</li>
-              <li>{stack[1]}</li>
-              <li>{stack[2]}</li>
-              <li>{stack[3]}</li>
-            </ul>
-            {/* <img className="project-modal__top-section__image" src={image} alt={shortDesc} /> */}
+
+            <div className="project-modal__info">
+              <div>
+                {stack.map((item, index) => (
+                  <p key={index} className="project-modal__stack">
+                    {item}
+                  </p>
+                ))}
+              </div>
+              <img src={thumbnail} alt={title} className="project-modal__thumbnail" />
+            </div>
           </div>
         </div>
       </CSSTransition>

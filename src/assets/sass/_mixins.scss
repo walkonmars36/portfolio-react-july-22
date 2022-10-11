@@ -8,6 +8,12 @@
   padding: 0 10%;
 }
 
+@mixin mq405($width: 405px) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
 @mixin mq480($width: 30rem) {
   @media (min-width: $width) {
     @content;

@@ -12,20 +12,25 @@
   background-color: $color-light-purple;
   border-radius: 2px;
   z-index: 300;
+  overflow: scroll;
 
   & button {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
+    position: fixed;
+    right: 1.5rem;
+    top: 0.2rem;
     width: 2rem;
     height: 2rem;
     margin: 0 auto;
-    background-color: white;
-    border-radius: 50%;
+    color: $color-white;
+    border: none;
     z-index: 100;
-
+    font-size: 4rem;
     cursor: pointer;
-    border: 1px solid rgba($color-grey-light, 1);
+
+    &:hover,
+    &:focus {
+      color: $color-green;
+    }
   }
 
   &__content {
@@ -34,21 +39,25 @@
     padding: 1rem;
   }
 
-  &__top-section {
-    position: relative;
-    overflow: hidden;
-    height: 30vh;
-    background-color: $color-dark-purple;
+  &__title {
+    margin-top: 1em;
+  }
 
-    &-title {
-      position: absolute;
-      text-align: center;
-      bottom: 25%;
-      left: 0;
-      right: 0;
-      padding: 1em;
-      background-color: $color-light-purple;
-    }
+  &__short-desc {
+    margin-top: 1em;
+    color: $color-green;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+
+  &__thumbnail {
+    float: right;
+    width: 30%;
   }
 }
 
