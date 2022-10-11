@@ -12,35 +12,29 @@
   background-color: $color-light-purple;
   border-radius: 2px;
   z-index: 300;
-  overflow: scroll;
-
-  & button {
-    position: fixed;
-    right: 2rem;
-    top: 1rem;
-    color: $color-white;
-    border: none;
-    font-size: 4rem;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      color: $color-green;
-    }
-  }
+  overflow-y: scroll;
 
   &__content {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-  }
+    padding: 1em;
 
-  &__title {
-    margin-top: 1em;
+    &-close {
+      margin-right: 0.5rem;
+      color: $color-white;
+      border: none;
+      font-size: 3rem;
+      align-self: flex-end;
+
+      &:hover,
+      &:focus {
+        color: $color-green;
+      }
+    }
   }
 
   &__short-desc {
-    margin-top: 1em;
+    margin-top: 1rem;
     color: $color-green;
   }
 

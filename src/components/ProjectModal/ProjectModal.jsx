@@ -15,11 +15,11 @@ const ProjectModal = ({closeModal, showModal, image, thumbnail, title, longDesc,
       {showModal && <Overlay />}
       <CSSTransition in={showModal} timeout={500} classNames="open-modal" unmountOnExit nodeRef={nodeRef}>
         <div className="project-modal" onClick={closeModal} ref={nodeRef}>
-          <button className="close" onClick={closeModal}>
-            &times;
-          </button>
-
           <div className="project-modal__content">
+            <button className="project-modal__content-close" onClick={closeModal}>
+              &times;
+            </button>
+
             <h3 className="project-modal__title">{title}</h3>
             <h5 className="project-modal__short-desc">{shortDesc}</h5>
             <p className="project-modal__long-desc">{longDesc}</p>
