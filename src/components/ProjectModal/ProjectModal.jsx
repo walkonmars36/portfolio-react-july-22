@@ -6,7 +6,7 @@ import {CSSTransition} from "react-transition-group";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
 const ProjectModal = ({project, showModal, closeModal}) => {
-  const {strTitle, strShortDesc, strLongDesc, strThumbnail, strLink, strStack} = project;
+  const {strTitle, strShortDesc, strLongDesc, strThumbnail, strStack} = project;
 
   const nodeRef = useRef(null);
 
