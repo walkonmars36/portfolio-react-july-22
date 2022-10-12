@@ -12,6 +12,7 @@
   border-radius: 2px;
   z-index: 300;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   &__content {
     display: flex;
