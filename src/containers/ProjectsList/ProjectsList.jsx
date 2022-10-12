@@ -14,14 +14,7 @@ const ProjectsList = ({projectsArray}) => {
             // prettier-ignore
             <Projects 
                 key={index}
-                id={project.id} 
-                title={project.strTitle}
-                shortDesc={project.strShortDesc}
-                longDesc={project.strLongDesc}
-                image={project.strImage}
-                thumbnail={project.strThumbnail}
-                link={project.strLink}
-                stack={project.strStack}
+                project={project}
                 />
           )}
         </div>

@@ -2,7 +2,9 @@ import {React, useState} from "react";
 import "./Projects.scss";
 import ProjectModal from "../ProjectModal/ProjectModal";
 
-const Projects = ({id, title, shortDesc, longDesc, image, thumbnail, link, stack}) => {
+const Projects = ({project}) => {
+  const {strTitle, strShortDesc, strImage, strStack} = project;
+
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => {
@@ -15,13 +17,13 @@ const Projects = ({id, title, shortDesc, longDesc, image, thumbnail, link, stack
   return (
     <div className="projects">
       <div className="projects-item">
-        <img src={image} alt={shortDesc} />
+        <img src={strImage} alt={strShortDesc} />
 
         <div className="projects-item__content">
-          <h4 className="projects-item__title">{title}</h4>
+          <h4 className="projects-item__title">{strTitle}</h4>
 
           <div className="projects-item__content-stack">
-            {stack.map((item, index) => (
+            {strStack.map((item, index) => (
               <span key={index}>{item}</span>
             ))}
           </div>
@@ -34,13 +36,7 @@ const Projects = ({id, title, shortDesc, longDesc, image, thumbnail, link, stack
             // prettier-ignore
             closeModal={closeModal}
             showModal={showModal}
-            image={image}
-            thumbnail={thumbnail}
-            title={title}
-            longDesc={longDesc}
-            link={link}
-            shortDesc={shortDesc}
-            stack={stack}
+            project={project}
           />
         </div>
       </div>

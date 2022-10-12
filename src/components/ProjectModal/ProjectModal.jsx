@@ -5,7 +5,9 @@ import Overlay from "../Overlay/Overlay";
 import {CSSTransition} from "react-transition-group";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
-const ProjectModal = ({closeModal, showModal, image, thumbnail, title, longDesc, stack, shortDesc}) => {
+const ProjectModal = ({project, showModal, closeModal}) => {
+  const {strTitle, strShortDesc, strLongDesc, strThumbnail, strLink, strStack} = project;
+
   const nodeRef = useRef(null);
 
   showModal ? disableBodyScroll(document) : enableBodyScroll(document);
@@ -20,19 +22,19 @@ const ProjectModal = ({closeModal, showModal, image, thumbnail, title, longDesc,
               &times;
             </button>
 
-            <h3 className="project-modal__title">{title}</h3>
-            <h5 className="project-modal__short-desc">{shortDesc}</h5>
-            <p className="project-modal__long-desc">{longDesc}</p>
+            <h3 className="project-modal__title">{strTitle}</h3>
+            <h5 className="project-modal__short-desc">{strShortDesc}</h5>
+            <p className="project-modal__long-desc">{strLongDesc}</p>
 
             <div className="project-modal__info">
               <div>
-                {stack.map((item, index) => (
+                {strStack.map((item, index) => (
                   <p key={index} className="project-modal__stack">
                     {item}
                   </p>
                 ))}
               </div>
-              <img src={thumbnail} alt={title} className="project-modal__thumbnail" />
+              <img src={strThumbnail} alt={strTitle} className="project-modal__thumbnail" />
             </div>
           </div>
         </div>
