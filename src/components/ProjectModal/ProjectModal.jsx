@@ -29,7 +29,7 @@ const ProjectModal = ({project, showModal, closeModal}) => {
             <h5 className="project-modal__short-desc">{strShortDesc}</h5>
             <p className="project-modal__long-desc">{strLongDesc}</p>
             <a href={strLink} className="project-modal__link" target="_blank" rel="no noreferrer">
-              View on Github <FontAwesomeIcon icon={faGithubAlt} />
+              Read more on Github <FontAwesomeIcon icon={faGithubAlt} />
             </a>
 
             <div className="project-modal__info">
