@@ -28,7 +28,7 @@ const ProjectModal = ({project, showModal, closeModal}) => {
             <h3 className="project-modal__title">{strTitle}</h3>
             <h5 className="project-modal__short-desc">{strShortDesc}</h5>
             <p className="project-modal__long-desc">{strLongDesc}</p>
-            <a href={strLink} className="project-modal__link">
+            <a href={strLink} className="project-modal__link" target="_blank" rel="no noreferrer">
               View on Github <FontAwesomeIcon icon={faGithubAlt} />
             </a>
 
