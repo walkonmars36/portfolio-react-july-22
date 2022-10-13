@@ -4,7 +4,7 @@ const projectsArray = [
     strTitle: "Courseology - Full Stack App",
     strShortDesc: "Final Project - 12 week bootcamp at _Nology.io. May - July 2022.",
     strLongDesc: "The task was to build a full stack app using a React front-end, Java/Spring Boot backend and a local MySQL database.",
-    strLink: "github.com",
+    strLink: "https://github.com/walkonmars36/courseology-fullstack-app",
     strImage: require("../assets/images/courseology.png"),
     strThumbnail: require("../assets/images/courseology-thumb.png"),
     strType: "Nology Project",

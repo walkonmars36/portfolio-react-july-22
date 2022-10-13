@@ -4,10 +4,10 @@
 .project-modal {
   position: fixed;
   display: block;
-  top: 1rem;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border: 1px solid $color-grey-light;
   background-color: $color-light-purple;
   border-radius: 2px;
@@ -39,11 +39,22 @@
     color: $color-green;
   }
 
+  &__link {
+    color: $color-grey-light;
+    font-size: 1rem;
+    margin-top: 1rem;
+
+    &:hover,
+    &:focus {
+      color: $color-green;
+    }
+  }
+
   &__info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   &__thumbnail {

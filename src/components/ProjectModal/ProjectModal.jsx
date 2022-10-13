@@ -5,8 +5,11 @@ import Overlay from "../Overlay/Overlay";
 import {CSSTransition} from "react-transition-group";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithubAlt, faHtml5, faCss3Alt, faJsSquare, faSass, faReact, faJava} from "@fortawesome/free-brands-svg-icons";
+
 const ProjectModal = ({project, showModal, closeModal}) => {
-  const {strTitle, strShortDesc, strLongDesc, strThumbnail, strStack} = project;
+  const {strTitle, strShortDesc, strLongDesc, strLink, strThumbnail, strStack} = project;
 
   const nodeRef = useRef(null);
 
@@ -25,6 +28,9 @@ const ProjectModal = ({project, showModal, closeModal}) => {
             <h3 className="project-modal__title">{strTitle}</h3>
             <h5 className="project-modal__short-desc">{strShortDesc}</h5>
             <p className="project-modal__long-desc">{strLongDesc}</p>
+            <a href={strLink} className="project-modal__link">
+              View on Github <FontAwesomeIcon icon={faGithubAlt} />
+            </a>
 
             <div className="project-modal__info">
               <div>
