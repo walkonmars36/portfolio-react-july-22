@@ -6,7 +6,7 @@ import {CSSTransition} from "react-transition-group";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithubAlt, faHtml5, faCss3Alt, faJsSquare, faSass, faReact, faJava} from "@fortawesome/free-brands-svg-icons";
+import {faGithubAlt} from "@fortawesome/free-brands-svg-icons";
 
 const ProjectModal = ({project, showModal, closeModal}) => {
   const {strTitle, strShortDesc, strLongDesc, strLink, strThumbnail, strStack} = project;
