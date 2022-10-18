@@ -28,25 +28,31 @@ const ProjectModal = ({project, showModal, closeModal}) => {
 
             <h3 className="project-modal__title">{strTitle}</h3>
             <h5 className="project-modal__short-desc">{strShortDesc}</h5>
-            <p className="project-modal__long-desc">{strLongDesc}</p>
-            <a href={strGithub} className="project-modal__link" target="_blank" rel="no noreferrer">
-              Read more on Github <FontAwesomeIcon icon={faGithubAlt} />
-            </a>
-            {strLiveSite !== "" && (
-              <a href={strLiveSite} className="project-modal__link" target="_blank" rel="no noreferrer">
-                View live site <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-              </a>
-            )}
 
-            <div className="project-modal__info">
-              <div>
-                {strStack.map((item, index) => (
-                  <p key={index} className="project-modal__stack">
-                    {item}
-                  </p>
-                ))}
+            <ul className="project-modal__stack">
+              {strStack.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+
+            <div className="project-modal__description">
+              <div className="project-modal__description-text">
+                <p className="project-modal__long-desc">{strLongDesc}</p>
+
+                <div className="project-modal__links">
+                  <a href={strGithub} className="project-modal__link" target="_blank" rel="no noreferrer">
+                    Read more on Github <FontAwesomeIcon icon={faGithubAlt} />
+                  </a>
+                  {strLiveSite !== "" && (
+                    <a href={strLiveSite} className="project-modal__link" target="_blank" rel="no noreferrer">
+                      View live site <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+                  )}
+                </div>
               </div>
-              <img src={strThumbnail} alt={strTitle} className="project-modal__thumbnail" />
+              <div className="project-modal__thumbnail">
+                <img src={strThumbnail} alt={strTitle} className="project-modal__thumbnail-img" />
+              </div>
             </div>
           </div>
         </div>
