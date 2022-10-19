@@ -12,8 +12,6 @@
   background-color: $color-light-purple;
   border-radius: 2px;
   z-index: 300;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 
   &__content {
     display: flex;
@@ -102,7 +100,7 @@
 .open-modal-enter-active {
   transform: translateX(0);
   opacity: 1;
-  transition: all 500ms;
+  transition: all ease-in 500ms;
 }
 
 .open-modal-exit {
@@ -113,5 +111,5 @@
 .open-modal-exit-active {
   transform: translateX(-100%);
   opacity: 0;
-  transition: all 500ms;
+  transition: all ease-out 500ms;
 }

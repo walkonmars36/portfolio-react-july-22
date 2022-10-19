@@ -13,8 +13,8 @@ const projectsArray = [
   {
     id: 1,
     strTitle: "Punk Beer",
-    strShortDesc: "Project 2 short description",
-    strLongDesc: "Project 2 long description",
+    strShortDesc: "React Project- Full-stack course at _nology.io - May - July 2022.",
+    strLongDesc: "React app that displays a list of beers from the Punk API.",
     strGithub: "https://github.com/walkonmars36/punk-api-june-22",
     strLiveSite: "https://walkonmars-punk-api.netlify.app/",
     strImage: require("../assets/images/punk.png"),
@@ -25,8 +25,8 @@ const projectsArray = [
   {
     id: 2,
     strTitle: "Weather App",
-    strShortDesc: "Project 3 short description",
-    strLongDesc: "Project 3 long description",
+    strShortDesc: "React Project - nology.io - post course - August 2022.",
+    strLongDesc: "Using the Open Weather API, this app displays the weather for a location based on it's co-ordinates.",
     strGithub: "https://github.com/walkonmars36/react-weather-app",
     strLiveSite: "https://walkonmars-react-weather-app.netlify.app/",
     strImage: require("../assets/images/weather.png"),
