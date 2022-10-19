@@ -46,7 +46,7 @@ const projectsArray = [
   },
   {
     id: 4,
-    strTitle: "Connect 4 Game",
+    strTitle: "Connect 4",
     strShortDesc: "Project 5 short description",
     strLongDesc: "Project 5 long description",
     strImage: require("../assets/images/connect4.png"),
