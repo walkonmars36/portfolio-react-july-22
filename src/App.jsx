@@ -12,7 +12,6 @@ import Hamburger from "hamburger-react";
 
 import {Element} from "react-scroll";
 import Overlay from "./components/Overlay/Overlay";
-// import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -26,8 +25,6 @@ function App() {
     setNavOpen(false);
     setShowNav(false);
   };
-
-  // navOpen ? disableBodyScroll(document) : enableBodyScroll(document);
 
   return (
     <div className="app">

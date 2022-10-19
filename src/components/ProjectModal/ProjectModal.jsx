@@ -3,7 +3,6 @@ import "./ProjectModal.scss";
 import Overlay from "../Overlay/Overlay";
 
 import {CSSTransition} from "react-transition-group";
-import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
@@ -13,8 +12,6 @@ const ProjectModal = ({project, showModal, closeModal}) => {
   const {strTitle, strShortDesc, strLongDesc, strGithub, strLiveSite, strThumbnail, strStack} = project;
 
   const nodeRef = useRef(null);
-
-  showModal ? disableBodyScroll(document) : enableBodyScroll(document);
 
   return (
     <>
