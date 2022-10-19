@@ -9,8 +9,8 @@ const Nav = ({handleNavLink, showNav}) => {
 
   return (
     <CSSTransition in={showNav} timeout={1000} classNames="open-nav" unmountOnExit nodeRef={nodeRef}>
-      <nav>
-        <ul ref={nodeRef}>
+      <nav ref={nodeRef}>
+        <ul>
           <li>
             <Link to="hero" smooth={true} duration={500} onClick={handleNavLink}>
               Home

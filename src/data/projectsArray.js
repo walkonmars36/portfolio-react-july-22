@@ -8,10 +8,7 @@ const projectsArray = [
     strLiveSite: "",
     strImage: require("../assets/images/courseology.png"),
     strThumbnail: require("../assets/images/courseology-thumb.png"),
-    strType: "Nology Project",
     strStack: ["React", "Java", "Spring Boot", "MySQL"],
-    strStatus: "in progress",
-    strDate: "2020-01-01",
   },
   {
     id: 1,
@@ -24,8 +21,6 @@ const projectsArray = [
     strThumbnail: require("../assets/images/punk-thumbnail.png"),
     strType: "Nology Project",
     strStack: ["React", "REST API"],
-    strStatus: "in progress",
-    strDate: "2020-01-01",
   },
   {
     id: 2,
@@ -36,10 +31,7 @@ const projectsArray = [
     strLiveSite: "https://walkonmars-react-weather-app.netlify.app/",
     strImage: require("../assets/images/weather.png"),
     strThumbnail: require("../assets/images/weather-thumbnail.png"),
-    strType: "Nology post course project",
     strStack: ["React", "REST API"],
-    strStatus: "in progress",
-    strDate: "2020-01-01",
   },
   {
     id: 3,
@@ -50,10 +42,7 @@ const projectsArray = [
     strThumbnail: require("../assets/images/future-hub-thumbnail.png"),
     strGithub: "https://github.com/nology-tech/niue-ecf",
     strLiveSite: "",
-    strType: "Nology Client Project",
     strStack: ["React", "Firebase"],
-    strStatus: "in progress",
-    strDate: "2020-01-01",
   },
   {
     id: 4,
@@ -64,10 +53,7 @@ const projectsArray = [
     strThumbnail: require("../assets/images/connect4-thumbnail.png"),
     strGithub: "https://github.com/walkonmars36/connect-4",
     strLiveSite: "",
-    strType: "Nology project",
     strStack: ["Javascript"],
-    strStatus: "in progress",
-    strDate: "2020-01-01",
   },
 ];
 

@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 import Hamburger from "hamburger-react";
 
 import {Element} from "react-scroll";
-import Overlay from "./components/Overlay/Overlay";
+// import Overlay from "./components/Overlay/Overlay";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
     <div className="app">
       <Header handleToggleNav={handleToggleNav} Hamburger={Hamburger} navOpen={navOpen} setNavOpen={setNavOpen} />
 
-      {navOpen && <Overlay />}
+      {/* {navOpen && <Overlay />} */}
       <Nav handleNavLink={handleNavLink} showNav={showNav} />
 
       <Element name="hero">
