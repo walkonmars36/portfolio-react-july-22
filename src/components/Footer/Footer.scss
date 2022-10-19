@@ -5,7 +5,7 @@
 .footer-content {
   @include container;
   background-color: $color-dark-purple;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-bottom: 5em;
 
   @include mq480 {
