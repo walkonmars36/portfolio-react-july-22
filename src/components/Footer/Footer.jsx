@@ -12,12 +12,12 @@ const Footer = () => {
 
       <div className="footer-content__links">
         <div className="footer-content__social-icons">
-          <span>
+          <a href="https://github.com/walkonmars36" target="_blank" rel="no noreferrer">
             <FontAwesomeIcon icon={faGithub} size="3x" />
-          </span>
-          <span>
+          </a>
+          <a href="https://www.linkedin.com/in/mark-lawson-001/" target="_blank" rel="no noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="3x" />
-          </span>
+          </a>
         </div>
         <div className="footer-content__email">
           <Obfuscate email="walkonmars@gmail.com" className="footer-content__email-address"></Obfuscate>

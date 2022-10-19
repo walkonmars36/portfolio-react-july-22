@@ -12,6 +12,7 @@
   background-color: $color-light-purple;
   border-radius: 2px;
   z-index: 300;
+  overflow-y: scroll;
 
   &__content {
     display: flex;
