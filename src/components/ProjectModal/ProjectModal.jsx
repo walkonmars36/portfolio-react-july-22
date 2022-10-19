@@ -1,6 +1,6 @@
 import {useRef} from "react";
 import "./ProjectModal.scss";
-// import Overlay from "../Overlay/Overlay";
+import Overlay from "../Overlay/Overlay";
 
 import {CSSTransition} from "react-transition-group";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
@@ -18,7 +18,7 @@ const ProjectModal = ({project, showModal, closeModal}) => {
 
   return (
     <>
-      {/* {showModal && <Overlay />} */}
+      {showModal && <Overlay />}
       <CSSTransition in={showModal} timeout={500} classNames="open-modal" unmountOnExit nodeRef={nodeRef}>
         <div className="project-modal" onClick={closeModal} ref={nodeRef}>
           <div className="project-modal__content">
