@@ -9,9 +9,11 @@ const Projects = ({project}) => {
 
   const openModal = () => {
     setShowModal(true);
+    document.body.style.overflow = "hidden";
   };
   const closeModal = () => {
     setShowModal(false);
+    document.body.style.overflow = "auto";
   };
 
   return (

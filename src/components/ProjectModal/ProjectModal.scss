@@ -97,7 +97,6 @@
 .open-modal-enter-active {
   transform: translateX(0);
   opacity: 1;
-  -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 
@@ -109,6 +108,5 @@
 .open-modal-exit-active {
   transform: translateX(-100%);
   opacity: 0;
-  -webkit-transition: all 500ms;
   transition: all 500ms;
 }
