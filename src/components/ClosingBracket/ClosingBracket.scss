@@ -6,4 +6,8 @@
   @include mq {
     width: 1.3rem;
   }
+
+  @include mq1024 {
+    width: 1.7rem;
+  }
 }
