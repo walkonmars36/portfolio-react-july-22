@@ -3,8 +3,8 @@
 
 .projects-list {
   margin-top: 3rem;
-  padding-bottom: 3em;
   @include container;
+  padding-bottom: 3em;
 
   &__heading {
     padding: 1.5rem 0 1rem 0;
