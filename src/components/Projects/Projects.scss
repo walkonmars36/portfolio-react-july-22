@@ -50,6 +50,7 @@
       border-radius: 3px;
       cursor: pointer;
       margin-top: 2rem;
+      backdrop-filter: blur(100px);
 
       @include mq405 {
         margin-top: 1rem;
