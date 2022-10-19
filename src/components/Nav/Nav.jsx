@@ -2,12 +2,15 @@ import {useRef} from "react";
 import "./Nav.scss";
 import Scroll from "react-scroll";
 import {CSSTransition} from "react-transition-group";
+import {useEffect} from "react";
 
 const Nav = ({handleNavLink, showNav}) => {
   const nodeRef = useRef(null);
   const Link = Scroll.Link;
 
-  showNav ? (document.body.style.overflow = "hidden") : (document.body.style.overflow = "auto");
+  useEffect(() => {
+    showNav ? (document.body.style.overflow = "hidden") : (document.body.style.overflow = "auto");
+  });
 
   return (
     <CSSTransition in={showNav} timeout={1000} classNames="open-nav" unmountOnExit nodeRef={nodeRef}>
