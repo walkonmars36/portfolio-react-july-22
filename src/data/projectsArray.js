@@ -2,7 +2,7 @@ const projectsArray = [
   {
     id: 0,
     strTitle: "Courseology - Full Stack App",
-    strShortDesc: "Final Project - 12 week bootcamp at _nology.io - May - July 2022.",
+    strShortDesc: "Final Project - Full-stack course at _nology.io - May - July 2022.",
     strLongDesc: "The task was to build a full stack app using a React front-end, Java/Spring Boot backend and a local MySQL database.",
     strGithub: "https://github.com/walkonmars36/courseology-fullstack-app",
     strLiveSite: "",
@@ -36,8 +36,8 @@ const projectsArray = [
   {
     id: 3,
     strTitle: "Future Hub",
-    strShortDesc: "Project 4 short description",
-    strLongDesc: "Project 4 long description",
+    strShortDesc: "Client Project - Full-stack course at _nology.io - May - July 2022.",
+    strLongDesc: "Working as a team, over 4 week long sprints, our cohort was tasked with building a MVP for a client using React.",
     strImage: require("../assets/images/future-hub.png"),
     strThumbnail: require("../assets/images/future-hub-thumbnail.png"),
     strGithub: "https://github.com/nology-tech/niue-ecf",

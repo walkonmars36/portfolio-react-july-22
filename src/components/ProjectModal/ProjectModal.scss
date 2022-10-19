@@ -44,7 +44,6 @@
 
   &__description {
     display: flex;
-
     margin-top: 3rem;
 
     &-text {
@@ -68,9 +67,14 @@
     display: block;
     margin-top: 0.5rem;
 
+    &-icon {
+      margin-left: 0.3rem;
+    }
+
     &:hover,
     &:focus {
       color: $color-green;
+      text-decoration: underline;
     }
   }
 
@@ -83,6 +87,7 @@
   }
 
   &__thumbnail {
+    align-self: center;
     width: 25%;
   }
 }

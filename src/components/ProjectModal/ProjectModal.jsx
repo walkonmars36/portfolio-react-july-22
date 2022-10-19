@@ -38,7 +38,7 @@ const ProjectModal = ({project, showModal, closeModal}) => {
 
                 <div className="project-modal__links">
                   <a href={strGithub} className="project-modal__link" target="_blank" rel="no noreferrer">
-                    Read more on Github <FontAwesomeIcon icon={faGithubAlt} />
+                    Read more on Github <FontAwesomeIcon icon={faGithubAlt} className="project-modal__link-icon" />
                   </a>
                   {strLiveSite !== "" && (
                     <a href={strLiveSite} className="project-modal__link" target="_blank" rel="no noreferrer">
