@@ -37,7 +37,7 @@ const projectsArray = [
     id: 3,
     strTitle: "Future Hub",
     strShortDesc: "Client Project - Full-stack course at _nology.io - May - July 2022.",
-    strLongDesc: "Working as a team, over 4 week long sprints, our cohort was tasked with building a MVP for a client using React.",
+    strLongDesc: "Working as a team, over four one week sprints, our cohort was tasked with building a MVP for a client using React.",
     strImage: require("../assets/images/future-hub.png"),
     strThumbnail: require("../assets/images/future-hub-thumbnail.png"),
     strGithub: "https://github.com/nology-tech/niue-ecf",
