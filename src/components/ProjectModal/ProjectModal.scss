@@ -29,11 +29,11 @@
     }
 
     @include mq {
-      font-size: 2.5rem;
+      font-size: 4vw;
     }
 
     @include mq1024 {
-      font-size: 3rem;
+      // font-size: 3rem;
       margin-top: 2rem;
       margin-right: 2rem;
     }
@@ -90,9 +90,12 @@
 
   &__link {
     color: $color-grey-light;
-    font-size: 1rem;
     display: block;
     margin-top: 0.5rem;
+
+    @include mq {
+      font-size: 2vw;
+    }
 
     &-icon {
       margin-left: 0.3rem;
