@@ -14,34 +14,43 @@
   z-index: 300;
   overflow-y: scroll;
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+  &__close {
+    color: $color-white;
+    font-size: 2rem;
+    position: fixed;
+    top: 5%;
+    right: 8%;
+    cursor: pointer;
 
-    @include mq480 {
-      padding: 3em;
+    &:hover,
+    &:focus {
+      color: $color-green;
     }
 
     @include mq {
-      padding: 5em;
+      font-size: 2.5rem;
     }
 
     @include mq1024 {
-      padding: 7em;
+      font-size: 3rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em;
+
+    @include mq480 {
+      padding: 4em 3em;
     }
 
-    &-close {
-      margin-right: 0.5rem;
-      color: $color-white;
-      border: none;
-      font-size: 3rem;
-      align-self: flex-end;
+    @include mq {
+      padding: 7em 5em;
+    }
 
-      &:hover,
-      &:focus {
-        color: $color-green;
-      }
+    @include mq1024 {
+      padding: 10em 7em;
     }
   }
 
