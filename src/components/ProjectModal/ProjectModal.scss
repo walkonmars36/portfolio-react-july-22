@@ -3,7 +3,8 @@
 
 .project-modal {
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column;
   top: 0.5rem;
   bottom: 0.5rem;
   left: 0.5rem;
@@ -17,10 +18,10 @@
   &__close {
     color: $color-white;
     font-size: 2rem;
-    position: fixed;
-    top: 5%;
-    right: 8%;
+    align-self: flex-end;
     cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
 
     &:hover,
     &:focus {
@@ -33,24 +34,27 @@
 
     @include mq1024 {
       font-size: 3rem;
+      margin-top: 2rem;
+      margin-right: 2rem;
     }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    padding: 4em 1em;
+    padding: 2em 1em;
+    max-width: 1000px;
 
     @include mq480 {
-      padding: 4em 3em;
+      padding: 3em;
     }
 
     @include mq {
-      padding: 7em 5em;
+      padding: 5em;
     }
 
     @include mq1024 {
-      padding: 10em 7em;
+      padding: 7em;
     }
   }
 
