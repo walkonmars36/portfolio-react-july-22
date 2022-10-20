@@ -30,8 +30,12 @@
   }
 
   &__image {
-    width: 30%;
+    width: 45%;
     border-radius: 50%;
+
+    @include mq480 {
+      width: 30%;
+    }
 
     @include mq {
       width: 25%;
