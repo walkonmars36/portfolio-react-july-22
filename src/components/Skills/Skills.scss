@@ -3,22 +3,14 @@
 @use "../../assets/sass/variables" as *;
 
 .technical-skills {
-  clear: left;
+  // clear: left;
 
   &__heading {
     margin-top: 1.5rem;
     font-size: 1.8rem;
-  }
 
-  &__icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2rem;
-
-    &-title {
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
+    @include mq {
+      margin-top: 4rem;
     }
   }
 
@@ -28,5 +20,55 @@
     justify-items: center;
     row-gap: 1rem;
     margin-top: 2rem;
+
+    @include mq {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem auto;
+    }
   }
+
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+
+    @include mq {
+      font-size: 2.5rem;
+    }
+
+    @include mq1024 {
+      font-size: 3rem;
+    }
+
+    &-title {
+      font-size: 0.4em;
+      margin-top: 0.5rem;
+
+      @include mq {
+        font-size: 0.3em;
+      }
+    }
+  }
+}
+
+.fa-html5 {
+  color: #de4b25;
+}
+
+.fa-css3-alt {
+  color: #239ddb;
+}
+
+.fa-square-js {
+  color: #f0d81d;
+}
+
+.fa-sass {
+  color: #c76495;
+}
+
+.fa-react {
+  color: #0cd5f2;
 }

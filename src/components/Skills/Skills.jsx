@@ -7,12 +7,8 @@ const Skills = () => {
   return (
     <div className="technical-skills">
       <h2 className="technical-skills__heading">Technical Skills</h2>
-      <p>Below are the technologies I have used so far, I expect to add to these as I am always keen to learn new methods and blah blah blah! </p>
+      <p className="technical-skills__text">Below are the technologies I have used so far, I expect to add to these as I am always keen to learn new methods and blah blah blah! </p>
       <div className="technical-skills__logos">
-        <div className="technical-skills__icon">
-          <p className="technical-skills__icon-title">Git/Github</p>
-          <FontAwesomeIcon icon={faGithubAlt} />
-        </div>
         <div className="technical-skills__icon">
           <p className="technical-skills__icon-title">HTML 5</p>
           <FontAwesomeIcon icon={faHtml5} />
@@ -38,6 +34,11 @@ const Skills = () => {
         <div className="technical-skills__icon">
           <p className="technical-skills__icon-title">Java</p>
           <FontAwesomeIcon icon={faJava} />
+        </div>
+
+        <div className="technical-skills__icon">
+          <p className="technical-skills__icon-title">Git/Github</p>
+          <FontAwesomeIcon icon={faGithubAlt} />
         </div>
 
         <div className="technical-skills__icon">
