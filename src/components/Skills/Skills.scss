@@ -38,6 +38,9 @@
 
     &-sass {
       width: 2.5rem;
+      @include mq {
+        font-size: 4vw;
+      }
     }
 
     @include mq {
