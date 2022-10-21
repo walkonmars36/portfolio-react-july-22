@@ -1,0 +1,9 @@
+@use "../../assets/sass/mixins" as *;
+
+.mysql-icon {
+  width: 2.3rem;
+
+  @include mq {
+    width: 4vw;
+  }
+}

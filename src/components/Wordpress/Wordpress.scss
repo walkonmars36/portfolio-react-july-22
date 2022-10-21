@@ -1,0 +1,9 @@
+@use "../../assets/sass/mixins" as *;
+
+.wordpress-icon {
+  width: 2.3rem;
+
+  @include mq {
+    width: 4vw;
+  }
+}

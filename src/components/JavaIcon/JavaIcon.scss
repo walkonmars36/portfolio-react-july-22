@@ -1,0 +1,9 @@
+@use "../../assets/sass/mixins" as *;
+
+.java-icon {
+  width: 1.5rem;
+
+  @include mq {
+    width: 3vw;
+  }
+}

@@ -32,8 +32,13 @@
   &__icon {
     display: flex;
     flex-direction: column;
+
     align-items: center;
     font-size: 2rem;
+
+    &-sass {
+      width: 2.5rem;
+    }
 
     @include mq {
       font-size: 4vw;
@@ -41,7 +46,7 @@
 
     &-title {
       font-size: 0.4em;
-      margin-top: 0.5rem;
+      margin: 0.3rem 0;
 
       @include mq480 {
         font-size: 0.3em;
