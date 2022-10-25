@@ -25,9 +25,11 @@ const AboutMe = () => {
           </p>
           <p>During the following years I built several websites with HTML and CSS along with e-commerce sites using Wordpress and Shopify, as well as operating market stalls at huge Christmas markets and Glastonbury Festival.</p>
           <p>
-            Fast forward to 2020 and struck by the COVID pandemic I found myself re-evaluating my life. The t-shirt business had been all consuming and fun, but ultimately unfulfilling. The love of web design and development had never gone away, so I
-            resolved to see how far I could take it.
+            Fast forward to 2020 and struck by the COVID pandemic I found myself re-evaluating my life. The t-shirt business had been all consuming and fun, but ultimately unfulfilling. The love of web design and development had never gone away, so
+            this time around I resolved to see how far I could take it.
           </p>
+
+          <p>My aim is to develop responsive and accessible applications that are performant, scalable and thoughtfully designed for accessibility and maintainability.</p>
           <p>I&#39;m particularly interested in working in an ethical environment and using my newly developed skills for good. Working with not for profits, charities or environmental agencies.</p>
         </div>
 
