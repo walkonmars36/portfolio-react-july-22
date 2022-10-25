@@ -11,7 +11,13 @@ const AboutMe = () => {
         <img className="about-me__image" src={Mark} alt="Headshot of Mark Lawson" />
 
         <div className="about-me__text">
-          <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
+          <p>
+            Having recently graduated from a 12 week full-stack developer course run by{" "}
+            <a href="https://nology.io/" target="_blank" rel="noreferrer">
+              _nology
+            </a>
+            , I’m now looking for my first role as a junior developer.
+          </p>
           <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
           <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
           <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>

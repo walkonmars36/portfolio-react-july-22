@@ -59,3 +59,13 @@ li {
     font-size: 1.5vw;
   }
 }
+
+a {
+  color: $color-grey-light;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+    text-decoration: underline;
+  }
+}

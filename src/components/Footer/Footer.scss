@@ -69,12 +69,11 @@
 
 .fa-github,
 .fa-linkedin {
-  color: $color-grey-light;
   cursor: pointer;
   font-size: 2rem;
   padding: 0.1em;
 
-  &:hover {
-    color: $color-green;
+  @include mq {
+    font-size: 4vw;
   }
 }
