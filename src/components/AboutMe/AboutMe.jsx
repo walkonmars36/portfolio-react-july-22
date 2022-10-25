@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.scss";
-import Mark from "../../assets/images/mark.jpeg";
+import Mark from "../../assets/images/mark.webp";
 import Skills from "../Skills/Skills";
 
 const AboutMe = () => {
@@ -19,8 +19,13 @@ const AboutMe = () => {
             , I&#39;m now looking for my first role as a junior developer.
           </p>
           <p>I first taught myself HTML and CSS around 16 years ago, I built some static sites and also spent some time in the development team at Bristol City College helping to migrate the content of their website to a new CMS.</p>
-          <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
-          <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
+          <p>
+            The timing wasn&#39;t right to pursue development at that time and with a growing awareness of environmental issues and ethical living, in 2007 I started one of the first t-shirt printing companies in the UK to focus solely on using
+            environmentally safe inks and ethically produced garments.
+          </p>
+          <p>I promoted awareness of organic cotton production and fair treatment of workers to my clients.</p>
+          <p>During the following years I built several websites with HTML and CSS along with e-commerce sites using Wordpress and Shopify.</p>
+          <p>Fast forward to 2020 and struck by the COVID pandemic I found myself re-evaluating my life. The t-shirt business had been all consuming and fun, but ultimately unfulfilling. </p>
         </div>
 
         <Skills />
