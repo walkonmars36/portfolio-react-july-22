@@ -6,11 +6,11 @@
   clear: left;
 
   &__heading {
-    margin-top: 1.5rem;
+    margin-top: 2em;
     font-size: 1.8rem;
 
     @include mq {
-      margin-top: 4rem;
+      margin-top: 4em;
       font-size: 3.3vw;
     }
   }
