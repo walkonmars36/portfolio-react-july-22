@@ -13,12 +13,12 @@ const AboutMe = () => {
         <div className="about-me__text">
           <p>
             Having recently graduated from a 12 week full-stack developer course run by{" "}
-            <a href="https://nology.io/" target="_blank" rel="noreferrer">
+            <a className="about-me__nology" href="https://nology.io/" target="_blank" rel="noreferrer">
               _nology
             </a>
-            , I’m now looking for my first role as a junior developer.
+            , I&#39;m now looking for my first role as a junior developer.
           </p>
-          <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
+          <p>I first taught myself HTML and CSS around 16 years ago, I built some static sites and also spent some time in the development team at Bristol City College helping to migrate the content of their website to a new CMS.</p>
           <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
           <p>Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc, viverra sed tortor non. Id at pellentesque mauris at tincidunt venenatis urna mus.</p>
         </div>

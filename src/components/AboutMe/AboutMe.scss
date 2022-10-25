@@ -30,7 +30,7 @@
   }
 
   &__image {
-    width: 45%;
+    width: 35%;
     border-radius: 50%;
 
     @include mq480 {
@@ -40,9 +40,22 @@
     @include mq {
       width: 25%;
     }
+
+    @include mq1024 {
+      width: 20%;
+    }
   }
 
   &__text {
     margin-top: 1rem;
+  }
+
+  &__nology {
+    color: $color-green;
+
+    &:hover,
+    &:focus {
+      color: $color-grey-light;
+    }
   }
 }

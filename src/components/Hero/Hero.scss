@@ -29,14 +29,22 @@
       font-weight: 700;
       line-height: 1.05;
       @include mq {
-        font-size: 3vw;
+        font-size: 4vw;
+      }
+
+      @include mq1024 {
+        font-size: 5vw;
       }
 
       span {
         font-size: 1.5rem;
 
         @include mq {
-          font-size: 2.2vw;
+          font-size: 2.5vw;
+        }
+
+        @include mq1024 {
+          font-size: 3vw;
         }
       }
     }
