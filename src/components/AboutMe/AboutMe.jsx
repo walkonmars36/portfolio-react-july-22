@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.scss";
-import Mark from "../../assets/images/mark.webp";
+import Mark from "../../assets/images/mark.jpeg";
 import Skills from "../Skills/Skills";
 
 const AboutMe = () => {
