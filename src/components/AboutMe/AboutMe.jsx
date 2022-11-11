@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import "./AboutMe.scss";
 import Mark from "../../assets/images/mark.webp";
 import Skills from "../Skills/Skills";
@@ -9,7 +9,6 @@ const AboutMe = () => {
       <h2 className="about-me__heading">ABOUT ME</h2>
       <div className="about-me__content">
         <img className="about-me__image" src={Mark} alt="Headshot of Mark Lawson" />
-
         <div className="about-me__text">
           <p>
             Having recently graduated from a 12 week full-stack developer course run by{" "}
@@ -32,7 +31,6 @@ const AboutMe = () => {
           <p>My aim is to develop responsive and accessible applications that are performant, scalable and thoughtfully designed for accessibility and maintainability.</p>
           <p>I&#39;m particularly interested in working in an ethical environment and using my newly developed skills for good. Working with not for profits, charities or environmental agencies.</p>
         </div>
-
         <Skills />
       </div>
     </div>
