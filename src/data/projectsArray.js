@@ -2,7 +2,7 @@ const projectsArray = [
   {
     id: 0,
     strTitle: "Courseology - Full Stack App",
-    strShortDesc: "Final Project - Full-stack course at _nology.io - May - July 2022.",
+    strShortDesc: "Final Project _nology.io full-stack course - May - July 2022.",
     strLongDesc: "The task was to build a full stack app using a React front-end, Java/Spring Boot backend and a local MySQL database.",
     strGithub: "https://github.com/walkonmars36/courseology-fullstack-app",
     strLiveSite: "",
@@ -13,7 +13,7 @@ const projectsArray = [
   {
     id: 1,
     strTitle: "Punk Beer",
-    strShortDesc: "React Project- Full-stack course at _nology.io - May - July 2022.",
+    strShortDesc: "React Project _nology.io full-stack course - May - July 2022.",
     strLongDesc: "React app that displays a list of beers from the Punk API.",
     strGithub: "https://github.com/walkonmars36/punk-api-june-22",
     strLiveSite: "https://walkonmars-punk-api.netlify.app/",
@@ -25,7 +25,7 @@ const projectsArray = [
   {
     id: 2,
     strTitle: "Weather App",
-    strShortDesc: "React Project - nology.io - post course - August 2022.",
+    strShortDesc: "React Project _nology.io - post course - August 2022.",
     strLongDesc: "Using the Open Weather API, this app displays the weather for a location based on it's co-ordinates.",
     strGithub: "https://github.com/walkonmars36/react-weather-app",
     strLiveSite: "https://walkonmars-react-weather-app.netlify.app/",
@@ -36,7 +36,7 @@ const projectsArray = [
   {
     id: 3,
     strTitle: "Future Hub",
-    strShortDesc: "Client Project - Full-stack course at _nology.io - May - July 2022.",
+    strShortDesc: "Client Project _nology.io full-stack course - May - July 2022.",
     strLongDesc: "Working as a team, over four one week sprints, our cohort was tasked with building a MVP for a client using React.",
     strImage: require("../assets/images/future-hub.png"),
     strThumbnail: require("../assets/images/future-hub-thumbnail.png"),
@@ -47,8 +47,8 @@ const projectsArray = [
   {
     id: 4,
     strTitle: "Connect 4",
-    strShortDesc: "Project 5 short description",
-    strLongDesc: "Project 5 long description",
+    strShortDesc: "JavaScript Project _nology.io full-stack course - May - July 2022.",
+    strLongDesc: "We were tasked with building a game using vanilla JavaScript. I chose to build Connect 4.",
     strImage: require("../assets/images/connect4.png"),
     strThumbnail: require("../assets/images/connect4-thumbnail.png"),
     strGithub: "https://github.com/walkonmars36/connect-4",
