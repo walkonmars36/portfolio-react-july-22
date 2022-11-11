@@ -14,15 +14,13 @@ const Skills = () => {
     <div className="technical-skills">
       <h2 className="technical-skills__heading">Technical Skills</h2>
       <p className="technical-skills__text">
-        This site is built in React and serves two purposes, as my portfolio and a project in it&#39;s own right. You can view the source code on{" "}
+        This site is built in React. You can view the source code on{" "}
         <a className="technical-skills__github" href="https://github.com/walkonmars36/portfolio-react-july-22" target="_blank" rel="noreferrer">
           Github
         </a>{" "}
       </p>
 
-      <p className="technical-skills__text">Below are the technologies I&#39;ve used to build this site, CMS's I've used, along with skills I developed during my time at _nology. </p>
-
-      <p className="technical-skills__text">At the moment I am learning Python</p>
+      <p className="technical-skills__text">Below are the technologies I&#39;ve used so far. At the moment I am learning Python</p>
 
       <div className="technical-skills__logos">
         <div className="technical-skills__icon">

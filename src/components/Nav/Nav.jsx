@@ -32,7 +32,7 @@ const Nav = ({handleNavLink, showNav}) => {
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500} onClick={handleNavLink}>
+            <Link to="footer" smooth={true} duration={500} onClick={handleNavLink}>
               Contact
             </Link>
           </li>

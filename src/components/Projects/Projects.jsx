@@ -17,7 +17,7 @@ const Projects = ({project}) => {
   };
 
   return (
-    <div className="projects">
+    <section className="projects">
       <div className="projects-item">
         <img src={strImage} alt={strShortDesc} />
 
@@ -42,7 +42,7 @@ const Projects = ({project}) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

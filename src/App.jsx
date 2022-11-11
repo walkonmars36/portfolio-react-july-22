@@ -45,7 +45,7 @@ function App() {
         <ProjectsList projectsArray={projectsArray} />
       </Element>
 
-      <Element name="contact">
+      <Element name="footer">
         <Footer />
       </Element>
     </div>

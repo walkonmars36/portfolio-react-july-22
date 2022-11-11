@@ -5,7 +5,7 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <>
+    <section>
       <div className="hero">
         <div className="hero__title">
           <p className="hero__title-name">
@@ -16,7 +16,7 @@ const Hero = () => {
         <HeroBtn />
       </div>
       <BackgroundTilt />
-    </>
+    </section>
   );
 };
 

@@ -7,7 +7,7 @@ import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <div className="footer-content">
+    <footer className="footer-content">
       <h2 className="footer-content__heading">Get in touch</h2>
 
       <div className="footer-content__links">
@@ -23,7 +23,7 @@ const Footer = () => {
           <Obfuscate email="walkonmars@gmail.com" className="footer-content__email-address"></Obfuscate>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
