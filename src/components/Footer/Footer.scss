@@ -57,13 +57,12 @@
   }
 
   &__social-icons {
+    border: 1px solid $color-grey-light;
     @include mq480 {
       @include container;
-      max-width: 7rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0 auto;
     }
   }
 }
