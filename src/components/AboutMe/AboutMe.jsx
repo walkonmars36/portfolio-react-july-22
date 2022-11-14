@@ -30,7 +30,7 @@ const AboutMe = () => {
 
           <p>
             Fast forward to 2020 and with the immense impact of the Covid pandemic, the business, like many, was greatly affected and I found myself re-evaluating my situation. I recognised that my love of web design and development was still strong.
-            I&#39;d never been happier than when working on websites. So, since March 2020 I have become more engrossed in web development, studying through online courses and also the 12 week full stack boot camp which ran from May - July 2022.
+            I&#39;d never been happier than when working on websites. So, since March 2020 I have become more engrossed in web development, studying through online courses and also the 12 week full stack bootcamp which ran from May - July 2022.
           </p>
 
           <p>Since completing the bootcamp I have been practising and expanding my knowledge of JavaScript and React and I am currently learning Python and Django to expand my knowledge of backend development.</p>
