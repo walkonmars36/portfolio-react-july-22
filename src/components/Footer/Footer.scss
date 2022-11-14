@@ -57,7 +57,6 @@
   }
 
   &__social-icons {
-    border: 1px solid $color-grey-light;
     @include mq480 {
       @include container;
       display: flex;
