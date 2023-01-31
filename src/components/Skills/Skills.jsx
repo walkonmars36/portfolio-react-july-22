@@ -20,7 +20,8 @@ const Skills = () => {
         </a>{" "}
       </p>
 
-      <p className="technical-skills__text">Below are the technologies I&#39;ve used so far. At the moment I am learning Python</p>
+      <p className="technical-skills__text"> I&#39;m keen to keep developing backend skills, but my heart lies firmly in the frontend with the user experience. </p>
+      <p className="technical-skills__text">Below are the technologies I&#39;ve used so far.</p>
 
       <div className="technical-skills__logos">
         <div className="technical-skills__icon">

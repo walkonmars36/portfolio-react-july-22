@@ -21,6 +21,10 @@
 
     &-name {
       margin: 0 0.4rem;
+      &:hover > a {
+        cursor: pointer;
+        text-decoration: none;
+      }
     }
   }
 
